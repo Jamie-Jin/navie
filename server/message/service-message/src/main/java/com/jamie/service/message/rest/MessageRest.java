@@ -29,14 +29,4 @@ public class MessageRest implements MessageApi {
         messageBiz2.send(notifyVo);
     }
 
-    /**
-     * 发消息前记录消息日志
-     * @param notifyVo
-     * @return
-     */
-    @Override
-    @PostMapping(Urls.insertMessaeLog)
-    public int insertMessageLog(@RequestBody NotifyVo notifyVo) {
-        return messageBiz2.insertMessageLog(notifyVo);
-    }
 }

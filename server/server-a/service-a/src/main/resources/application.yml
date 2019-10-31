@@ -2,6 +2,11 @@ server:
   port: 1001
 
 spring:
+  application:
+    name: service-a
+  profiles:
+    active: dev
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
@@ -11,6 +16,15 @@ spring:
       test-while-idle: true
       test-on-return: false
       pool-prepared-statements: false
+  rabbitmq:
+    virtual-host: /rabbit
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        max-concurrency: 10
+        concurrency: 5
+
   cloud:
     config:
       discovery:
@@ -22,6 +36,8 @@ spring:
         max-interval: 10000
         multiplier: 2
         max-attempts: 5
+      profile: dev
+      label: master
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

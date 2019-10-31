@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: service-b
+  profiles:
+    active: dev
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -16,11 +18,7 @@ spring:
         acknowledge-mode: manual
         max-concurrency: 10
         concurrency: 5
-
   datasource:
-    url: jdbc:mysql://localhost:3306/cloud_b?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=utf-8
-    username: root
-    password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
       validation-query: select 1 from DUAL
@@ -28,6 +26,19 @@ spring:
       test-on-return: false
       test-while-idle: true
       pool-prepared-statements: false
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      fail-fast: true
+      retry:
+        initial-interval: 2000
+        max-interval: 10000
+        multiplier: 2
+        max-attempts: 5
+      profile: dev
+      label: master
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -36,3 +47,4 @@ mybatis:
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     cache-enabled: true
+

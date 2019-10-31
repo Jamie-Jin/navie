@@ -12,7 +12,4 @@ public interface MessageApi {
     @PostMapping(Urls.sendMessage)
     void send(@RequestBody NotifyVo notifyVo) throws Exception;
 
-    @PostMapping(Urls.insertMessaeLog)
-    int insertMessageLog(@RequestBody NotifyVo notifyVo);
-
 }
