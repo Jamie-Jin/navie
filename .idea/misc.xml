@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/static-res" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-config/pom.xml" />
+        <option value="$PROJECT_DIR$/common/db-config/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-web/pom.xml" />
+        <option value="$PROJECT_DIR$/server/pom.xml" />
+        <option value="$PROJECT_DIR$/server/message/pom.xml" />
+        <option value="$PROJECT_DIR$/server/message/api-message/pom.xml" />
+        <option value="$PROJECT_DIR$/server/message/service-message/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/feign/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/api-a/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-b/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-b/api-b/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-b/service-b/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-c/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-c/api-c/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-c/service-c/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/config/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/tx-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/zuul-login/pom.xml" />
+        <option value="$PROJECT_DIR$/static-res/pom.xml" />
+        <option value="$PROJECT_DIR$/server/redis/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

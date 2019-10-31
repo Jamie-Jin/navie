@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-c" />
+        <module name="service-b" />
+        <module name="service-a" />
+        <module name="redis" />
+        <module name="tx-manager" />
+        <module name="feign" />
+        <module name="common-dao" />
+        <module name="api-message" />
+        <module name="static-res" />
+        <module name="common-config" />
+        <module name="api-c" />
+        <module name="api-b" />
+        <module name="api-a" />
+        <module name="eureka" />
+        <module name="config" />
+        <module name="db-config" />
+        <module name="service-message" />
+        <module name="common-web" />
+        <module name="zuul-login" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-a" target="1.8" />
+      <module name="api-b" target="1.8" />
+      <module name="api-c" target="1.8" />
+      <module name="api-message" target="1.8" />
+      <module name="cloud" target="1.8" />
+      <module name="common" target="1.8" />
+      <module name="common-config" target="1.8" />
+      <module name="common-dao" target="1.8" />
+      <module name="common-web" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="db-config" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="feign" target="1.8" />
+      <module name="message" target="1.8" />
+      <module name="navie" target="1.8" />
+      <module name="redis" target="1.8" />
+      <module name="server" target="1.8" />
+      <module name="server-a" target="1.8" />
+      <module name="server-b" target="1.8" />
+      <module name="server-c" target="1.8" />
+      <module name="service-a" target="1.8" />
+      <module name="service-b" target="1.8" />
+      <module name="service-c" target="1.8" />
+      <module name="service-message" target="1.8" />
+      <module name="static-res" target="1.5" />
+      <module name="tx-manager" target="1.8" />
+      <module name="zuul-login" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-a" options="-parameters" />
+      <module name="api-b" options="-parameters" />
+      <module name="api-c" options="-parameters" />
+      <module name="api-message" options="-parameters" />
+      <module name="cloud" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="common-config" options="-parameters" />
+      <module name="common-dao" options="-parameters" />
+      <module name="common-web" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="db-config" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="feign" options="-parameters" />
+      <module name="message" options="-parameters" />
+      <module name="navie" options="-parameters" />
+      <module name="redis" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="server-a" options="" />
+      <module name="server-b" options="-parameters" />
+      <module name="server-c" options="-parameters" />
+      <module name="service-a" options="-parameters" />
+      <module name="service-b" options="-parameters" />
+      <module name="service-c" options="-parameters" />
+      <module name="service-message" options="-parameters" />
+      <module name="static-res" options="" />
+      <module name="tx-manager" options="-parameters" />
+      <module name="zuul-login" options="-parameters" />
+    </option>
+  </component>
+</project>

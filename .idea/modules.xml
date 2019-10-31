@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/server/server-a/api-a/api-a.iml" filepath="$PROJECT_DIR$/server/server-a/api-a/api-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-b/api-b/api-b.iml" filepath="$PROJECT_DIR$/server/server-b/api-b/api-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-c/api-c/api-c.iml" filepath="$PROJECT_DIR$/server/server-c/api-c/api-c.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/message/api-message/api-message.iml" filepath="$PROJECT_DIR$/server/message/api-message/api-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/cloud.iml" filepath="$PROJECT_DIR$/cloud/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-config/common-config.iml" filepath="$PROJECT_DIR$/common/common-config/common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-dao/common-dao.iml" filepath="$PROJECT_DIR$/common/common-dao/common-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-web/common-web.iml" filepath="$PROJECT_DIR$/common/common-web/common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/config/config.iml" filepath="$PROJECT_DIR$/cloud/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/db-config/db-config.iml" filepath="$PROJECT_DIR$/common/db-config/db-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/eureka/eureka.iml" filepath="$PROJECT_DIR$/cloud/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/feign/feign.iml" filepath="$PROJECT_DIR$/cloud/feign/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/message/message.iml" filepath="$PROJECT_DIR$/server/message/message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/navie.iml" filepath="$PROJECT_DIR$/navie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/redis/redis.iml" filepath="$PROJECT_DIR$/server/redis/redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-a/server-a.iml" filepath="$PROJECT_DIR$/server/server-a/server-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-b/server-b.iml" filepath="$PROJECT_DIR$/server/server-b/server-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-c/server-c.iml" filepath="$PROJECT_DIR$/server/server-c/server-c.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-a/service-a/service-a.iml" filepath="$PROJECT_DIR$/server/server-a/service-a/service-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-b/service-b/service-b.iml" filepath="$PROJECT_DIR$/server/server-b/service-b/service-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-c/service-c/service-c.iml" filepath="$PROJECT_DIR$/server/server-c/service-c/service-c.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/message/service-message/service-message.iml" filepath="$PROJECT_DIR$/server/message/service-message/service-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/static-res/static-res.iml" filepath="$PROJECT_DIR$/static-res/static-res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" filepath="$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/zuul-login/zuul-login.iml" filepath="$PROJECT_DIR$/cloud/zuul-login/zuul-login.iml" />
+    </modules>
+  </component>
+</project>

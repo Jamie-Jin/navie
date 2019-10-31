@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 使用SpringBoot作为父依赖 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.9.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>com.jamie</groupId>
+    <artifactId>naive</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>naive</name>
+    <packaging>pom</packaging>
+    <description>Demo project for Spring Boot</description>
+
+    <modules>
+        <module>common</module>
+        <module>server</module>
+        <module>cloud</module>
+    </modules>
+
+    <properties>
+        <spring.boot.version>2.1.9.RELEASE</spring.boot.version>
+        <spring.cloud.version>Greenwich.SR3</spring.cloud.version>
+        <druid.version>1.1.20</druid.version>
+        <mybatis.version>2.1.0</mybatis.version>
+        <eureka.version>1.4.7.RELEASE</eureka.version>
+        <oauth2.version>2.3.7.RELEASE</oauth2.version>
+        <rabbitmq.version>2.2.0.RELEASE</rabbitmq.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <jackson.version>2.9.10</jackson.version>
+        <tx-lcn.version>5.0.2.RELEASE</tx-lcn.version>
+        <rapid.version>4.0.5</rapid.version>
+        <common.lang.version>2.6</common.lang.version>
+        <lombok.version>1.18.10</lombok.version>
+    </properties>
+
+    <!-- 子模块将继承以下依赖 -->
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- 作为依赖版本控制，子模块引入依赖时无需注明版本号 -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- SpringBoot依赖 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- SpringCloud依赖 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>   <!-- 该配置使子项目引入相关依赖无需加版本号，自动匹配 -->
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-eureka-server</artifactId>
+                <version>${eureka.version}</version>
+            </dependency>
+
+            <!-- 阿里巴巴数据库连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- MyBatis -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <!-- Spring Security Oauth2 -->
+            <dependency>
+                <groupId>org.springframework.security.oauth</groupId>
+                <artifactId>spring-security-oauth2</artifactId>
+                <version>${oauth2.version}</version>
+            </dependency>
+
+            <!-- RabbitMQ -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+                <version>${rabbitmq.version}</version>
+            </dependency>
+
+            <!-- FastJson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <!-- Redis键值对序列化时要用到的依赖 start -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <!-- Redis键值对序列化时要用到的依赖 end -->
+
+            <!-- TX-LCN分布式事务依赖 start -->
+            <!-- TX-Manager：分布式事务管理中心 -->
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-tm</artifactId>
+                <version>${tx-lcn.version}</version>
+            </dependency>
+
+            <!-- TX-LCN分布式事务客户端依赖 -->
+            <!-- tc客户端 -->
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-tc</artifactId>
+                <version>${tx-lcn.version}</version>
+            </dependency>
+
+            <!-- tc客户端与tm管理中心通讯依赖 -->
+            <dependency>
+                <groupId>com.codingapi.txlcn</groupId>
+                <artifactId>txlcn-txmsg-netty</artifactId>
+                <version>${tx-lcn.version}</version>
+            </dependency>
+            <!-- TX-LCN分布式事务依赖 end -->
+
+            <!-- FreeMarker相关依赖 start-->
+            <dependency>
+                <groupId>com.googlecode.rapid-framework</groupId>
+                <artifactId>rapid-core</artifactId>
+                <version>${rapid.version}</version>
+            </dependency>
+
+            <!-- FreeMarker -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-freemarker</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>${common.lang.version}</version>
+            </dependency>
+            <!-- FreeMarker相关依赖 end-->
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- 下载依赖的仓库 -->
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+
+</project>

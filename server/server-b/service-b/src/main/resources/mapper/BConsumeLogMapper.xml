@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jamie.service.b.dao.BConsumeLogDao">
+
+    <!-- 消息消费者创建一条消费日志 -->
+    <!-- 初始状态：消费状态为未消费，消费次数为0 -->
+    <insert id="insert" parameterType="com.jamie.api.b.entity.BConsumerLogEntity">
+        insert into `consumer_b_log`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            correlation_id, routing_key, status, consume_count, body,
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            #{correlationId}, #{routingKey}, 0, 0, #{body},
+        </trim>
+    </insert>
+
+    <!-- 消息消费成功 -->
+    <update id="consumeSuccess" parameterType="com.jamie.api.b.entity.BConsumerLogEntity">
+        update `consumer_b_log`
+        <trim prefix="set" suffixOverrides=",">
+            status = 1,
+            consume_count = consume_count + 1,
+            update_time = #{updateTime},
+        </trim>
+        <trim prefix="where" prefixOverrides="and">
+            and correlation_id = #{correlationId}
+            and status = 0
+        </trim>
+    </update>
+
+    <!-- 消息消费失败 -->
+    <update id="consumeFail" parameterType="com.jamie.api.b.entity.BConsumerLogEntity">
+        update `consumer_b_log`
+        <trim prefix="set" suffixOverrides=",">
+            status = -1,
+            consume_count = consume_count + 1,
+            update_time = #{updateTime},
+        </trim>
+        <trim prefix="where" prefixOverrides="and">
+            and correlation_id = #{correlationId}
+            and status in (0, 1)
+        </trim>
+    </update>
+
+    <!-- 检查消息是否已消费，保证消息不会重复消费 -->
+    <select id="checkConsume" parameterType="com.jamie.api.message.vo.NotifyVo" resultType="java.lang.Integer">
+        select count(*) from `consumer_b_log`
+        <trim prefix="where" prefixOverrides="and">
+            and correlation_id = #{correlationId}
+            and status in (1, -1)
+        </trim>
+    </select>
+
+</mapper>

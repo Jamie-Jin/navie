@@ -1,0 +1,38 @@
+server:
+  port: 1003
+
+spring:
+  application:
+    name: service-b
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /rabbit
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        max-concurrency: 10
+        concurrency: 5
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_b?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      validation-query: select 1 from DUAL
+      test-on-borrow: true
+      test-on-return: false
+      test-while-idle: true
+      pool-prepared-statements: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: true
