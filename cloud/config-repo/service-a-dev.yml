@@ -4,8 +4,22 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      validation-query: select 1 from DUAL
+      validation-query-timeout: 6000
+      test-on-borrow: true
+      test-while-idle: true
+      test-on-return: false
+      pool-prepared-statements: false
   rabbitmq:
     host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
+    virtual-host: /rabbit
+    connection-timeout: 15000
+    listener:
+      simple:
+        acknowledge-mode: manual
+        max-concurrency: 10
+        concurrency: 5
