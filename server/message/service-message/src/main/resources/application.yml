@@ -2,6 +2,8 @@ server:
   port: 1002
 
 spring:
+  profiles:
+    active: dev
   application:
     name: service-message
   rabbitmq:

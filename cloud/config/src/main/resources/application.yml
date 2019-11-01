@@ -12,11 +12,11 @@ spring:
           username: Jamie-Jin
           password: loveyou19940725
           search-paths: cloud/config-repo
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
 
 
 eureka:
@@ -29,8 +29,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
