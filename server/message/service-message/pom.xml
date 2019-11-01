@@ -55,25 +55,6 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <!-- 公共Dao -->
-        <dependency>
-            <groupId>com.jamie</groupId>
-            <artifactId>common-dao</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <!-- 阿里巴巴数据库连接池 -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
-
-        <!-- MySql驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
     </dependencies>
 
 </project>

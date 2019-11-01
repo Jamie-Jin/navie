@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c5c7ef-2901-403d-a7dc-94b77f8a56dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cloud/config-repo/service-message-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/api/MessageApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/api/MessageApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/api-message/target/classes/com/jamie/api/message/entity/MessageEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/api-message/target/classes/com/jamie/api/message/entity/MessageEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/rest/MessageRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/rest/MessageRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/target/classes/com/jamie/service/message/biz/MessageBiz2.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/target/classes/com/jamie/service/message/biz/MessageBiz2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/target/classes/com/jamie/service/message/dao/MessageDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/target/classes/com/jamie/service/message/rest/MessageRest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/target/classes/mapper/MessageDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/message/api-message/target/classes/com/jamie/api/message/api/MessageApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/api-message/target/classes/com/jamie/api/message/api/MessageApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/message/service-message/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/message/service-message/service-message.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/service-message.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server-b/service-b/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -69,68 +61,22 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="368">
-                    <caret line="26" selection-start-line="26" selection-end-line="26" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="19" selection-start-line="5" selection-start-column="2" selection-end-line="9" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="112">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-b/service-b/pom.xml">
+        <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-message-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="35" column="21" selection-start-line="31" selection-start-column="7" selection-end-line="35" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-a/service-a/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+            <state relative-caret-position="80">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -160,7 +106,6 @@
       <find>eureka</find>
       <find>boot</find>
       <find>fas</find>
-      <find>mysql</find>
       <find>DEFAULT_PRIORITY</find>
       <find>fast</find>
       <find>fastJS</find>
@@ -168,6 +113,7 @@
       <find>druid</find>
       <find>consumer_b_log</find>
       <find>amqp</find>
+      <find>mysql</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,8 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud/eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud/feign/src/main/java/com/jamie/feign/config/FeignConfig.java" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/ServiceMessageApplication.java" />
         <option value="$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/server/message/api-message/pom.xml" />
@@ -186,7 +130,6 @@
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz.java" />
         <option value="$PROJECT_DIR$/server/message/service-message/README.md" />
         <option value="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/urls/Urls.java" />
-        <option value="$PROJECT_DIR$/server/message/service-message/pom.xml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/config/RabbitConfig.java" />
         <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/entity/ProducerALogEntity.java" />
         <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" />
@@ -207,7 +150,6 @@
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/cloud_message.sql" />
         <option value="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/entity/MessageEntity.java" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/mapper/MessageDao.xml" />
-        <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz2.java" />
         <option value="$PROJECT_DIR$/cloud/config/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/config/src/main/java/com/jamie/config/ConfigApplication.java" />
@@ -227,6 +169,10 @@
         <option value="$PROJECT_DIR$/server/server-a/service-a/pom.xml" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server/message/service-message/pom.xml" />
+        <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/service-message-dev.yml" />
+        <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -254,9 +200,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="-12" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -264,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,20 +222,58 @@
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="config-repo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-a" type="462c0819:PsiDirectoryNode" />
-              <item name="service-a" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
@@ -299,8 +285,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceBApplication">
+  <component name="RunManager" selected="JUnit.ARestTest.test">
     <configuration name="ARestTest.insertA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-a" />
       <extension name="coverage">
@@ -523,7 +507,8 @@
       <workItem from="1572490691062" duration="859000" />
       <workItem from="1572496452181" duration="1681000" />
       <workItem from="1572512666947" duration="1945000" />
-      <workItem from="1572521460352" duration="5593000" />
+      <workItem from="1572521460352" duration="5898000" />
+      <workItem from="1572566124084" duration="698000" />
     </task>
     <task id="LOCAL-00001" summary="使用配置中心">
       <created>1572525185957</created>
@@ -546,13 +531,17 @@
       <option name="project" value="LOCAL" />
       <updated>1572526630009</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="配置文件分环境">
+      <created>1572527480373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572527480374</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ARestTest_insertA - 2019.10.30 at 08h 49m 46s.xml">
-      <configuration name="ARestTest.insertA" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ARestTest_insertA - 2019.10.30 at 08h 50m 49s.xml">
       <configuration name="ARestTest.insertA" configurationId="JUnit" />
     </history-entry>
@@ -580,15 +569,18 @@
     <history-entry file="ARestTest_test - 2019.10.31 at 17h 17m 35s.xml">
       <configuration name="ARestTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ARestTest_test - 2019.10.31 at 21h 14m 56s.xml">
+      <configuration name="ARestTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46285000" />
+    <option name="totallyTimeSpent" value="47288000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="653" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.392886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.392886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -667,24 +659,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="配置文件分环境" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.1.11.RELEASE/spring-amqp-2.1.11.RELEASE-sources.jar!/org/springframework/amqp/core/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="67" column="11" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
-          <folding>
-            <element signature="e#1919#1920#0" expanded="true" />
-            <element signature="e#1965#1966#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.1.11.RELEASE/spring-rabbit-2.1.11.RELEASE-sources.jar!/org/springframework/amqp/rabbit/core/RabbitTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25392">
-          <caret line="1739" column="73" selection-start-line="1739" selection-start-column="73" selection-end-line="1739" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-amqp/2.1.11.RELEASE/spring-amqp-2.1.11.RELEASE-sources.jar!/org/springframework/amqp/core/MessageProperties.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -874,13 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/test/java/com/jamie/service/a/rest/ARestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/entity/MessageEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -898,30 +865,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/mapper/MessageDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/dao/MessageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/mapper/MessageDao.xml" />
+    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/dao/MessageDao.java" />
     <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-804">
@@ -940,13 +885,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-message.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-message.yml" />
     <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream-binder-rabbit/2.2.0.RELEASE/spring-cloud-stream-binder-rabbit-2.2.0.RELEASE.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1019,38 +958,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="19" selection-start-line="5" selection-start-column="2" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/bootstrap.yml" />
     <entry file="file://$PROJECT_DIR$/server/server-b/service-b/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="35" column="21" selection-start-line="31" selection-start-column="7" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1061,10 +973,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/test/java/com/jamie/service/a/rest/ARestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/message/service-message/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="505">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-message-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
         </state>
       </provider>
     </entry>
