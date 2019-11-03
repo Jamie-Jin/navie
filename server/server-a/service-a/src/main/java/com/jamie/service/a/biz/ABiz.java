@@ -1,5 +1,6 @@
 package com.jamie.service.a.biz;
 
+import com.alibaba.fastjson.JSON;
 import com.jamie.api.a.entity.AEntity;
 import com.jamie.api.a.entity.AProducerLogEntity;
 import com.jamie.api.a.vo.AVo;
@@ -27,6 +28,10 @@ public class ABiz {
     // 消息生产者插入生产日志
     public int insertAProducerLog(AProducerLogEntity entity){
         return aProducerLogDao.insertAProducerLog(entity);
+    }
+
+    public String getData(){
+        return JSON.toJSONString(aDao.getData());
     }
 
 }

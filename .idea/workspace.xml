@@ -2,10 +2,113 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c5c7ef-2901-403d-a7dc-94b77f8a56dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud/config-repo/config-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/WebAApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_core_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_10_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_10_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_10_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_1_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_bus_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_2_0_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_server_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_server_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_binder_rabbit_core_2_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_amqp_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/config/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/config/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/config/config.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/config/config.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/config/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-config/common-config.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-config/common-config.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-config/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-config/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/db-config.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/db-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DbConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DruidProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DruidProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/target/classes/META-INF/db-config.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/web-a/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/target/classes/com/jamie/db_config/config/DbConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/db-config/target/classes/com/jamie/db_config/config/DruidProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/message/service-message/service-message.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/service-message.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/message/service-message/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/message/service-message/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/api-a/target/classes/com/jamie/api/a/api/Aapi.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/api-a/target/classes/com/jamie/api/a/api/Aapi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/api-a/target/classes/com/jamie/api/a/urls/Urls.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/api-a/target/classes/com/jamie/api/a/urls/Urls.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/dao/ADao.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/dao/ADao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/AMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/AMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/service-b.iml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/service-b.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/cloud_b.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/cloud_b.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/target/classes/cloud_b.sql" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/target/classes/cloud_b.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,6 +138,9 @@
     <ignored path="$PROJECT_DIR$/cloud/tx-manager/target/" />
     <ignored path="$PROJECT_DIR$/cloud/zuul-login/target/" />
     <ignored path="$PROJECT_DIR$/static-res/target/" />
+    <ignored path="$PROJECT_DIR$/server/server-a/web/target/" />
+    <ignored path="$PROJECT_DIR$/common/datasource-config/target/" />
+    <ignored path="$PROJECT_DIR$/server/server-a/web-a/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +166,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cloud/config/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server-a/web-a/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="14" selection-start-line="14" selection-start-column="1" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="352">
+              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud/config-repo/config-dev.yml">
+        <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="64">
+              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +220,6 @@
       <find>rabbit_queue</find>
       <find>10</find>
       <find>spring-cloud-starter-netflix-eureka-server</find>
-      <find>eureka</find>
       <find>boot</find>
       <find>fas</find>
       <find>DEFAULT_PRIORITY</find>
@@ -109,8 +228,20 @@
       <find>mysq</find>
       <find>druid</find>
       <find>consumer_b_log</find>
-      <find>amqp</find>
       <find>mysql</find>
+      <find>api-a</find>
+      <find>bus-amqp</find>
+      <find>db-conf</find>
+      <find>config-server</find>
+      <find>spring-cloud-starter-config</find>
+      <find>spring-cloud-bus</find>
+      <find>spring-cloud-stream-binder-rabbit</find>
+      <find>eureka.version</find>
+      <find>eureka</find>
+      <find>amqp</find>
+      <find>config</find>
+      <find>bus</find>
+      <find>spring-cloud-starter-bus-amqp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,57 +250,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/server/message/api-message/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud/feign/pom.xml" />
-        <option value="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/vo/NotifyVo.java" />
-        <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz.java" />
-        <option value="$PROJECT_DIR$/server/message/service-message/README.md" />
-        <option value="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/urls/Urls.java" />
-        <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/config/RabbitConfig.java" />
-        <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/entity/ProducerALogEntity.java" />
-        <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" />
-        <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/cloud-a.sql" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/cloud_b.sql" />
-        <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/entity/AProducerLogEntity.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/dao/AProducerLogDao.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/AProducerLogMapper.xml" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" />
-        <option value="$PROJECT_DIR$/server/server-b/api-b/src/main/java/com/jamie/api/b/entity/BConsumerLogEntity.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/dao/BConsumeLogDao.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/BMessageBiz.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/test/java/com/jamie/service/a/rest/ARestTest.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/consume/ServiceBConsumer.java" />
-        <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/dao/MessageDao.java" />
-        <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/cloud_message.sql" />
         <option value="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/entity/MessageEntity.java" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/mapper/MessageDao.xml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz2.java" />
-        <option value="$PROJECT_DIR$/cloud/config/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/config/src/main/java/com/jamie/config/ConfigApplication.java" />
         <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/service-a.yml" />
         <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/bootstrap.yml" />
         <option value="$PROJECT_DIR$/cloud/config-repo/service-b.yml" />
         <option value="$PROJECT_DIR$/cloud/config-repo/service-message.yml" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/BConsumeLogMapper.xml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/rest/MessageRest.java" />
         <option value="$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/api/MessageApi.java" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/bootstrap.yml" />
         <option value="$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml" />
-        <option value="$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/pom.xml" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/server/message/service-message/pom.xml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/service-message-dev.yml" />
         <option value="$PROJECT_DIR$/server/message/service-message/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud/config/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/AMapper.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/dao/ADao.java" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" />
+        <option value="$PROJECT_DIR$/server/server-a/web/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server/server-a/web/src/main/java/com/jamie/web/WebApplication.java" />
         <option value="$PROJECT_DIR$/cloud/config/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DbConfig.java" />
+        <option value="$PROJECT_DIR$/common/datasource-config/src/main/java/com/jamie/datasource_config/DatasourceConfigApplication.java" />
+        <option value="$PROJECT_DIR$/common/datasource-config/src/main/java/com/jamie/datasource_config/datasource/DruidProperties.java" />
+        <option value="$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/cloud/config/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/common/datasource-config/src/main/java/com/jamie/datasource_config/datasource/DBConfig.java" />
+        <option value="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DruidProperties.java" />
+        <option value="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DBConfig.java" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml" />
+        <option value="$PROJECT_DIR$/common/db-config/pom.xml" />
+        <option value="$PROJECT_DIR$/common/datasource-config/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/web/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/web/src/main/java/com/jamie/web/controller/AController.java" />
+        <option value="$PROJECT_DIR$/cloud/config/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/pom.xml" />
+        <option value="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/WebAApplication.java" />
+        <option value="$PROJECT_DIR$/server/server-a/web-a/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java" />
+        <option value="$PROJECT_DIR$/server/server-a/web-a/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common-config/pom.xml" />
       </list>
     </option>
   </component>
@@ -182,22 +313,12 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="service-b" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="service-b" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
+    <option name="x" value="948" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -219,76 +340,35 @@
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="config-repo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="web-a" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="web-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="web-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -296,11 +376,34 @@
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="service-message" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="web-a" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="web-a" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="a" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
+              <item name="navie" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="server-a" type="462c0819:PsiDirectoryNode" />
+              <item name="web-a" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="a" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,7 +421,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/redis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/server-a/web-a" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -351,7 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ARestTest.test">
+  <component name="RunManager" selected="Spring Boot.WebAApplication">
     <configuration name="ARestTest.insertA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-a" />
       <extension name="coverage">
@@ -400,20 +503,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiAApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="api-a" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.api.a.ApiAApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiBApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="api-b" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.api.b.ApiBApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiCApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-c" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.api.c.ApiCApplication" />
@@ -421,16 +510,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonDaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="common-dao" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.common_dao.CommonDaoApplication" />
+    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.config.ConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.config.ConfigApplication" />
+    <configuration name="DbConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="db-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.db_config.DbConfigApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -477,16 +566,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticResApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="static-res" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.static_res.StaticResApplication" />
+    <configuration name="TxManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="tx-manager" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.tx_manager.TxManagerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TxManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="tx-manager" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.tx_manager.TxManagerApplication" />
+    <configuration name="WebAApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web-a" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.web.a.WebAApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -498,6 +587,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ARestTest.insertA" />
+      <item itemvalue="JUnit.ARestTest.test" />
+      <item itemvalue="JUnit.RedisServiceTest.set" />
+      <item itemvalue="Spring Boot.ApiCApplication" />
+      <item itemvalue="Spring Boot.ConfigApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.RedisApplication" />
+      <item itemvalue="Spring Boot.ServiceAApplication" />
+      <item itemvalue="Spring Boot.ServiceBApplication" />
+      <item itemvalue="Spring Boot.ServiceCApplication" />
+      <item itemvalue="Spring Boot.ServiceMessageApplication" />
+      <item itemvalue="Spring Boot.TxManagerApplication" />
+      <item itemvalue="Spring Boot.ZuulLoginApplication" />
+      <item itemvalue="Spring Boot.DbConfigApplication" />
+      <item itemvalue="Spring Boot.WebAApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ARestTest.test" />
@@ -530,6 +636,11 @@
       <workItem from="1572512666947" duration="1945000" />
       <workItem from="1572521460352" duration="5898000" />
       <workItem from="1572566124084" duration="964000" />
+      <workItem from="1572682314324" duration="1392000" />
+      <workItem from="1572785243724" duration="1773000" />
+      <workItem from="1572787807541" duration="2073000" />
+      <workItem from="1572789926664" duration="1004000" />
+      <workItem from="1572790964291" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="使用配置中心">
       <created>1572525185957</created>
@@ -566,7 +677,126 @@
       <option name="project" value="LOCAL" />
       <updated>1572567146932</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="配置文件分环境">
+      <created>1572676191089</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572676191089</updated>
+    </task>
+    <task id="LOCAL-00007" summary="配置文件分环境">
+      <created>1572676794665</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572676794665</updated>
+    </task>
+    <task id="LOCAL-00008" summary="配置文件分环境">
+      <created>1572677209165</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572677209165</updated>
+    </task>
+    <task id="LOCAL-00009" summary="配置文件分环境">
+      <created>1572678320104</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572678320104</updated>
+    </task>
+    <task id="LOCAL-00010" summary="配置文件分环境">
+      <created>1572678584087</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572678584087</updated>
+    </task>
+    <task id="LOCAL-00011" summary="配置文件分环境">
+      <created>1572678738572</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572678738572</updated>
+    </task>
+    <task id="LOCAL-00012" summary="配置文件分环境">
+      <created>1572679145806</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572679145806</updated>
+    </task>
+    <task id="LOCAL-00013" summary="配置文件分环境">
+      <created>1572679546307</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572679546307</updated>
+    </task>
+    <task id="LOCAL-00014" summary="配置文件分环境">
+      <created>1572680107383</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572680107383</updated>
+    </task>
+    <task id="LOCAL-00015" summary="配置文件分环境">
+      <created>1572680583352</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572680583352</updated>
+    </task>
+    <task id="LOCAL-00016" summary="配置文件分环境">
+      <created>1572680686196</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572680686196</updated>
+    </task>
+    <task id="LOCAL-00017" summary="配置文件分环境">
+      <created>1572680939524</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1572680939524</updated>
+    </task>
+    <task id="LOCAL-00018" summary="配置文件分环境">
+      <created>1572682113421</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1572682113421</updated>
+    </task>
+    <task id="LOCAL-00019" summary="配置文件分环境">
+      <created>1572682898275</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1572682898275</updated>
+    </task>
+    <task id="LOCAL-00020" summary="配置文件分环境">
+      <created>1572789212688</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572789212688</updated>
+    </task>
+    <task id="LOCAL-00021" summary="配置文件分环境">
+      <created>1572789489350</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1572789489350</updated>
+    </task>
+    <task id="LOCAL-00022" summary="修复配置中心无法动态客户端配置问题：rabbitmq不要使用自定义的exchange">
+      <created>1572790283218</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1572790283218</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -602,13 +832,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47554000" />
+    <option name="totallyTimeSpent" value="62481000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.392886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27890056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -619,14 +849,49 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.57726467" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.497979" weight="0.57015985" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.78723407" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502021" side_tool="true" weight="0.43872115" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32983023" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32983023" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32983023" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35165724" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4987874" weight="0.59325045" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012126" side_tool="true" weight="0.4724689" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
@@ -641,41 +906,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36054972" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.40425533" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.78723407" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32978722" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32983023" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,274 +914,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="使用配置中心" />
     <MESSAGE value="配置文件分环境" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置文件分环境" />
+    <MESSAGE value="修复配置中心无法动态客户端配置问题：rabbitmq不要使用自定义的exchange" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复配置中心无法动态客户端配置问题：rabbitmq不要使用自定义的exchange" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/config/RabbitConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software/java/jdk/src.zip!/java/util/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="140" column="33" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/entity/AProducerLOg.java" />
-    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/cloud_b.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/cloud-a.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/entity/AProducerLogEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/AProducerLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/dao/AProducerLogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/common-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/api-b/src/main/java/com/jamie/api/b/entity/BConsumerLogEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/dao/BConsumeLogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar!/com/rabbitmq/client/Channel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3-sources.jar!/com/rabbitmq/client/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="784" column="9" selection-start-line="784" selection-start-column="9" selection-end-line="784" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.10.RELEASE/spring-messaging-5.1.10.RELEASE.jar!/org/springframework/messaging/handler/invocation/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/vo/NotifyVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/consume/ServiceBConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/amqp/spring-rabbit/2.1.11.RELEASE/spring-rabbit-2.1.11.RELEASE-sources.jar!/org/springframework/amqp/rabbit/connection/CorrelationData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/api-message/src/main/java/com/jamie/api/message/entity/MessageEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/cloud_message.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/resources/mapper/MessageDao.xml" />
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/dao/MessageDao.java" />
-    <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/biz/MessageBiz2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-804">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config/src/main/java/com/jamie/config/ConfigApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-message.yml" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream-binder-rabbit/2.2.0.RELEASE/spring-cloud-stream-binder-rabbit-2.2.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="48" column="57" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/2.1.3.RELEASE/spring-cloud-context-2.1.3.RELEASE.jar!/org/springframework/cloud/bootstrap/BootstrapApplicationListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/BMessageBiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/BConsumeLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/message/service-message/src/main/java/com/jamie/service/message/rest/MessageRest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -987,13 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/test/java/com/jamie/service/a/rest/ARestTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1005,20 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1043,17 +988,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/config-dev.yml">
+    <entry file="file://$PROJECT_DIR$/cloud/feign/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="-144" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/mapper/AMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <folding>
+            <element signature="e#1792#1793#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/dao/ADao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/web/src/main/resources/application.yml" />
+    <entry file="file://$PROJECT_DIR$/server/server-a/web/src/test/java/com/jamie/web/WebApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/server/server-a/web/src/main/java/com/jamie/web/WebApplication.java" />
+    <entry file="file://$PROJECT_DIR$/cloud/config/src/main/java/com/jamie/config/ConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/datasource-config/src/main/java/com/jamie/datasource_config/DatasourceConfigApplication.java" />
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/config-dev.yml" />
+    <entry file="file://$PROJECT_DIR$/cloud/config/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="14" selection-start-line="14" selection-start-column="1" selection-end-line="18" selection-end-column="20" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/datasource-config/src/main/java/com/jamie/datasource_config/datasource/DBConfig.java" />
+    <entry file="file://$PROJECT_DIR$/common/common-dao/src/main/java/com/jamie/common_dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/datasource-config/src/main/java/com/jamie/datasource_config/datasource/DruidProperties.java" />
+    <entry file="file://$PROJECT_DIR$/common/common.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/DbConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DruidProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/mvnw.cmd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/db-config/src/test/java/com/jamie/db_config/DbConfigApplicationTests.java" />
+    <entry file="file://$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/datasource-config/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/server/server-a/web/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/server/server-a/web/src/main/java/com/jamie/web/controller/AController.java" />
+    <entry file="file://$PROJECT_DIR$/common/db-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="182" column="7" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="995">
+          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/WebAApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/test/java/com/jamie/web/a/WebAApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/web-a/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

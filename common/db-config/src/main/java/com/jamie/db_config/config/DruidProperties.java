@@ -5,23 +5,21 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * 动态刷新MySQL配置
- */
-@RefreshScope
 @Configuration
+@RefreshScope
 @Getter
 public class DruidProperties {
-    @Value("${spring.datasource.druid.url}")
+
+    @Value("${spring.datasource.url}")
     private String url;
 
-    @Value("${spring.datasource.druid.username}")
+    @Value("${spring.datasource.username}")
     private String userName;
 
-    @Value("${spring.datasource.druid.password}")
+    @Value("${spring.datasource.password}")
     private String password;
 
-    @Value("${spring.datasource.druid.driver-class-name}")
-    private String driverName;
+    @Value("${spring.datasource.driver-class-name}")
+    private String driverClassName;
 
 }

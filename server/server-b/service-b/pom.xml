@@ -29,6 +29,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- 微服务发现机制 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <!-- RabbitMQ -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

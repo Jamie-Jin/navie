@@ -14,4 +14,8 @@
         </trim>
     </insert>
 
+    <select id="getData" resultType="com.jamie.api.a.entity.AEntity">
+        select msg from `table_a` order by create_time desc limit 1
+    </select>
+
 </mapper>

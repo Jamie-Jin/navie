@@ -9,11 +9,9 @@ import org.springframework.context.annotation.Primary;
 
 import javax.sql.DataSource;
 
-/**
- * 通过配置中心热部署数据源
- */
 @Configuration
-public class DbConfig {
+public class DBConfig {
+
     @Autowired
     private DruidProperties druid;
 
@@ -22,10 +20,12 @@ public class DbConfig {
     @RefreshScope
     public DataSource dataSource(){
         DruidDataSource dataSource = new DruidDataSource();
+
         dataSource.setUrl(druid.getUrl());
         dataSource.setUsername(druid.getUserName());
         dataSource.setPassword(druid.getPassword());
-        dataSource.setDriverClassName(druid.getDriverName());
+        dataSource.setDriverClassName(druid.getDriverClassName());
+
         return dataSource;
     }
 

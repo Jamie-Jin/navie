@@ -11,4 +11,7 @@ public class ADao extends BaseDao<AEntity> {
         return singleInsert(aEntity);
     }
 
+    public AEntity getData(){
+        return getSqlSessionTemplate().selectOne(getStatement("getData"));
+    }
 }

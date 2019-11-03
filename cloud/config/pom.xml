@@ -31,31 +31,24 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- 微服务发现机制 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <!-- 配置中心依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
-        <!-- 使用/actuator/bus-refresh刷新配置时要用到以下依赖 start -->
-        <!-- 消息总线 -->
+        <!-- 消息总线 + rabbitmq更新微服务配置 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-bus</artifactId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-stream-binder-rabbit</artifactId>
-        </dependency>
-        <!-- 使用/actuator/bus-refresh刷新配置时要用到以下依赖 end -->
-
-        <!-- 内含微服务发现机制 -->
-        <dependency>
-            <groupId>com.jamie</groupId>
-            <artifactId>common-config</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>

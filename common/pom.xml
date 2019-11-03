@@ -17,9 +17,9 @@
 
    <modules>
        <module>common-config</module>
-       <module>db-config</module>
        <module>common-web</module>
        <module>common-dao</module>
+       <module>db-config</module>
    </modules>
 
     <build>

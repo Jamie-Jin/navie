@@ -10,6 +10,7 @@
         <module name="service-b" />
         <module name="service-a" />
         <module name="redis" />
+        <module name="web-a" />
         <module name="tx-manager" />
         <module name="feign" />
         <module name="common-dao" />
@@ -38,6 +39,7 @@
       <module name="common-dao" target="1.8" />
       <module name="common-web" target="1.8" />
       <module name="config" target="1.8" />
+      <module name="datasource-config" target="1.8" />
       <module name="db-config" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="feign" target="1.8" />
@@ -54,6 +56,8 @@
       <module name="service-message" target="1.8" />
       <module name="static-res" target="1.5" />
       <module name="tx-manager" target="1.8" />
+      <module name="web" target="1.8" />
+      <module name="web-a" target="1.8" />
       <module name="zuul-login" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -69,6 +73,7 @@
       <module name="common-dao" options="-parameters" />
       <module name="common-web" options="-parameters" />
       <module name="config" options="-parameters" />
+      <module name="datasource-config" options="-parameters" />
       <module name="db-config" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="feign" options="-parameters" />
@@ -85,6 +90,8 @@
       <module name="service-message" options="-parameters" />
       <module name="static-res" options="" />
       <module name="tx-manager" options="-parameters" />
+      <module name="web" options="-parameters" />
+      <module name="web-a" options="-parameters" />
       <module name="zuul-login" options="-parameters" />
     </option>
   </component>

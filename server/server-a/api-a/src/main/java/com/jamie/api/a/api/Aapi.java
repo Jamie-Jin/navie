@@ -14,4 +14,7 @@ public interface Aapi {
 
     @PostMapping(Urls.messageAToB)
     void messageAToB(@RequestBody AVo aVo);
+
+    @PostMapping(Urls.getData)
+    String getData();
 }

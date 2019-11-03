@@ -18,6 +18,7 @@
     <modules>
         <module>api-a</module>
         <module>service-a</module>
+        <module>web-a</module>
     </modules>
 
     <build>

@@ -48,23 +48,31 @@
             <artifactId>fastjson</artifactId>
         </dependency>
 
-        <!-- 内含微服务发现机制 -->
+        <!-- RabbitMQ -->
         <dependency>
-            <groupId>com.jamie</groupId>
-            <artifactId>common-config</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
 
-        <!-- 使用配置中心 -->
+        <!-- 配置中心相关依赖 start -->
+        <!-- 配置中心客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
-        <!-- RabbitMQ -->
+        <!-- 消息总线 + rabbitmq更新微服务配置 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+        <!-- 配置中心相关依赖 end -->
+
+        <!-- 内含微服务发现机制 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>common-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <!-- 数据源以及公共Dao -->
@@ -84,6 +92,12 @@
         <dependency>
             <groupId>com.jamie</groupId>
             <artifactId>api-message</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>db-config</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

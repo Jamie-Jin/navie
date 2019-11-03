@@ -54,4 +54,9 @@ public class ARest implements Aapi {
         }
     }
 
+    @Override
+    public String getData() {
+        return aBiz.getData();
+    }
+
 }
