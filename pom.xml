@@ -72,17 +72,6 @@
                 <scope>import</scope>   <!-- 该配置使子项目引入相关依赖无需加版本号，自动匹配 -->
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-starter-eureka-server</artifactId>-->
-<!--                <version>${eureka.version}</version>-->
-<!--            </dependency>-->
-
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-starter-eureka</artifactId>-->
-<!--            </dependency>-->
-
             <!-- 阿里巴巴数据库连接池 -->
             <dependency>
                 <groupId>com.alibaba</groupId>
