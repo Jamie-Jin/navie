@@ -27,4 +27,10 @@ public class AController {
         return aapi.insertAandB(msg);
     }
 
+    @RequestMapping("/abc")
+    @ResponseBody
+    public int insertABC(@RequestParam("m") String msg) {
+        return aapi.insertABC(msg);
+    }
+
 }

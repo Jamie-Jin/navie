@@ -3,6 +3,7 @@ package com.jamie.service.a.biz;
 import com.alibaba.fastjson.JSON;
 import com.codingapi.txlcn.tc.annotation.DTXPropagation;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
+import com.codingapi.txlcn.tc.annotation.TxcTransaction;
 import com.jamie.api.a.entity.AEntity;
 import com.jamie.api.a.entity.AProducerLogEntity;
 import com.jamie.api.a.vo.AVo;
@@ -24,7 +25,7 @@ public class ABiz {
     private AProducerLogDao aProducerLogDao;
 
     // 被调用方要加上DTXPropagation.SUPPORTS，为什么要加，未知
-    @LcnTransaction(propagation = DTXPropagation.SUPPORTS)
+    @TxcTransaction(propagation = DTXPropagation.SUPPORTS)
     @Transactional(rollbackFor = Exception.class)
     public int insertA(AVo aVo){
         AEntity aEntity = new AEntity();

@@ -22,4 +22,8 @@ public interface Aapi {
     // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
     @PostMapping(Urls.insertAandB)
     int insertAandB(@RequestBody String msg);
+
+    @PostMapping(Urls.insertABC)
+    int insertABC(@RequestBody String msg);
+
 }

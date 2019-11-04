@@ -8,6 +8,8 @@ import com.jamie.api.a.urls.Urls;
 import com.jamie.api.a.vo.AVo;
 import com.jamie.api.b.api.Bapi;
 import com.jamie.api.b.entity.BEntity;
+import com.jamie.api.c.api.CApi;
+import com.jamie.api.c.vo.CVo;
 import com.jamie.api.message.api.MessageApi;
 import com.jamie.api.message.vo.NotifyVo;
 import com.jamie.service.a.biz.ABiz;
@@ -29,6 +31,9 @@ public class ARest implements Aapi {
 
     @Autowired
     private Bapi bapi;
+
+    @Autowired
+    private CApi cApi;
 
     @Override
     @PostMapping(Urls.insertA)
@@ -78,6 +83,28 @@ public class ARest implements Aapi {
         BEntity bEntity = new BEntity();
         bEntity.setMsg(msg);
         int bRes = bapi.insertB(bEntity);
+
+        return aRes + bRes;
+    }
+
+    // 按照网上说法，调用方的@LcnTransaction是不需要加参数的
+    @LcnTransaction
+    @Override
+    @PostMapping(Urls.insertABC)
+    public int insertABC(String msg) {
+        AVo aVo = new AVo();
+        aVo.setMsg(msg);
+        int aRes = aBiz.insertA(aVo);
+
+        BEntity bEntity = new BEntity();
+        bEntity.setMsg(msg);
+        int bRes = bapi.insertB(bEntity);
+
+        CVo cVo = new CVo();
+        cVo.setVal(msg);
+        cVo.setKey(msg);
+        cVo.setExpireTime(60);
+        cApi.insertC(cVo);
 
         return aRes + bRes;
     }
