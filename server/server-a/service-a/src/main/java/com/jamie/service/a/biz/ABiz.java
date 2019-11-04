@@ -26,7 +26,7 @@ public class ABiz {
 
     // 被调用方要加上DTXPropagation.SUPPORTS，为什么要加，未知
     @TxcTransaction(propagation = DTXPropagation.SUPPORTS)
-    @Transactional(rollbackFor = Exception.class)
+    //@Transactional(rollbackFor = Exception.class)
     public int insertA(AVo aVo){
         AEntity aEntity = new AEntity();
         BeanUtils.copyProperties(aVo, aEntity);
