@@ -72,6 +72,20 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- TX-LCN分布式事务相关依赖 start -->
+        <!--tc客户端-->
+        <dependency>
+            <groupId>com.codingapi.txlcn</groupId>
+            <artifactId>txlcn-tc</artifactId>
+        </dependency>
+
+        <!--tc客户端与tm事务管理中心通讯-->
+        <dependency>
+            <groupId>com.codingapi.txlcn</groupId>
+            <artifactId>txlcn-txmsg-netty</artifactId>
+        </dependency>
+        <!-- TX-LCN分布式事务相关依赖 end -->
+
         <!-- 公共配置，内含微服务发现机制 -->
         <dependency>
             <groupId>com.jamie</groupId>
@@ -89,6 +103,13 @@
         <dependency>
             <groupId>com.jamie</groupId>
             <artifactId>common-dao</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 支持热部署的数据源 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>db-config</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

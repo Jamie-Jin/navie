@@ -1,5 +1,6 @@
 package com.jamie.api.a.api;
 
+import com.jamie.api.a.entity.AEntity;
 import com.jamie.api.a.urls.Urls;
 import com.jamie.api.a.vo.AVo;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -17,4 +18,8 @@ public interface Aapi {
 
     @PostMapping(Urls.getData)
     String getData();
+
+    // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
+    @PostMapping(Urls.insertAandB)
+    int insertAandB(@RequestBody String msg);
 }

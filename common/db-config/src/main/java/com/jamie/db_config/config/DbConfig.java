@@ -26,6 +26,13 @@ public class DBConfig {
         dataSource.setPassword(druid.getPassword());
         dataSource.setDriverClassName(druid.getDriverClassName());
 
+        dataSource.setValidationQuery(druid.getValidationQuery());
+        dataSource.setValidationQueryTimeout(druid.getValidationQueryTimeout());
+        dataSource.setTestOnBorrow(druid.getTestOnBorrow());
+        dataSource.setTestWhileIdle(druid.getTestWhileIdle());
+        dataSource.setTestOnReturn(druid.getTestOnReturn());
+        dataSource.setPoolPreparedStatements(druid.getPoolPreparedStatements());
+
         return dataSource;
     }
 

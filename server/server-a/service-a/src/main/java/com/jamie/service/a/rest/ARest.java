@@ -59,4 +59,10 @@ public class ARest implements Aapi {
         return aBiz.getData();
     }
 
+    @Override
+    @PostMapping(Urls.insertAandB)
+    public int insertAandB(String msg) {
+        return aBiz.insertAandB(msg);
+    }
+
 }

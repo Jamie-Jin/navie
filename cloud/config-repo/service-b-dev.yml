@@ -8,3 +8,7 @@ spring:
     port: 5672
     username: guest
     password: guest
+
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070

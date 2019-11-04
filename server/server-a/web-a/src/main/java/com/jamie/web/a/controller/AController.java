@@ -4,6 +4,7 @@ import com.jamie.api.a.api.Aapi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -17,6 +18,13 @@ public class AController {
     @ResponseBody
     public String dataA(){
         return aapi.getData();
+    }
+
+    // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
+    @RequestMapping("/ab")
+    @ResponseBody
+    public int insertAB(@RequestParam("m") String msg){
+        return aapi.insertAandB(msg);
     }
 
 }
