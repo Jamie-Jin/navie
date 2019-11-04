@@ -30,6 +30,40 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- TX-LCN分布式事务客户端依赖 -->
+        <!-- tc客户端 -->
+        <dependency>
+            <groupId>com.codingapi.txlcn</groupId>
+            <artifactId>txlcn-tc</artifactId>
+        </dependency>
+
+        <!-- tc客户端与tm管理中心通讯依赖 -->
+        <dependency>
+            <groupId>com.codingapi.txlcn</groupId>
+            <artifactId>txlcn-txmsg-netty</artifactId>
+        </dependency>
+
+        <!-- TX-LCN客户端不引jdbc依赖会报错 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- TX-LCN分布式事务依赖 end -->
+
+        <!-- Redis模块 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>redis</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 内含注册中心客户端，配置中心客户端 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>common-config</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>com.jamie</groupId>
             <artifactId>api-c</artifactId>
