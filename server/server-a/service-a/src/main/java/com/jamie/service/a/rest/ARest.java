@@ -67,9 +67,9 @@ public class ARest implements Aapi {
 
 
     // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
-    @Override
-    @PostMapping(Urls.insertAandB)
     @LcnTransaction
+    @PostMapping(Urls.insertAandB)
+    @Override
     public int insertAandB(String msg) {
         AVo aVo = new AVo();
         aVo.setMsg(msg);

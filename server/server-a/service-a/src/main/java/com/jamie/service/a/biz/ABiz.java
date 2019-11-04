@@ -1,6 +1,7 @@
 package com.jamie.service.a.biz;
 
 import com.alibaba.fastjson.JSON;
+import com.codingapi.txlcn.tc.annotation.DTXPropagation;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.jamie.api.a.entity.AEntity;
 import com.jamie.api.a.entity.AProducerLogEntity;
@@ -11,12 +12,10 @@ import com.jamie.service.a.dao.AProducerLogDao;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class ABiz {
-
-    @Autowired
-    private Bapi bapi;
 
     @Autowired
     private ADao aDao;
@@ -24,7 +23,9 @@ public class ABiz {
     @Autowired
     private AProducerLogDao aProducerLogDao;
 
-    @LcnTransaction
+    // 被调用方要加上DTXPropagation.SUPPORTS，为什么要加，未知
+    @LcnTransaction(propagation = DTXPropagation.SUPPORTS)
+    @Transactional(rollbackFor = Exception.class)
     public int insertA(AVo aVo){
         AEntity aEntity = new AEntity();
         BeanUtils.copyProperties(aVo, aEntity);
