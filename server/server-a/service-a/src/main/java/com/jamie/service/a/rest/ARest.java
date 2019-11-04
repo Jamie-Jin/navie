@@ -1,10 +1,13 @@
 package com.jamie.service.a.rest;
 
 import com.alibaba.fastjson.JSON;
+import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.jamie.api.a.api.Aapi;
 import com.jamie.api.a.entity.AProducerLogEntity;
 import com.jamie.api.a.urls.Urls;
 import com.jamie.api.a.vo.AVo;
+import com.jamie.api.b.api.Bapi;
+import com.jamie.api.b.entity.BEntity;
 import com.jamie.api.message.api.MessageApi;
 import com.jamie.api.message.vo.NotifyVo;
 import com.jamie.service.a.biz.ABiz;
@@ -23,6 +26,9 @@ public class ARest implements Aapi {
 
     @Autowired
     private MessageApi messageApi;
+
+    @Autowired
+    private Bapi bapi;
 
     @Override
     @PostMapping(Urls.insertA)
@@ -59,10 +65,21 @@ public class ARest implements Aapi {
         return aBiz.getData();
     }
 
+
+    // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
     @Override
     @PostMapping(Urls.insertAandB)
+    @LcnTransaction
     public int insertAandB(String msg) {
-        return aBiz.insertAandB(msg);
+        AVo aVo = new AVo();
+        aVo.setMsg(msg);
+        int aRes = aBiz.insertA(aVo);
+
+        BEntity bEntity = new BEntity();
+        bEntity.setMsg(msg);
+        int bRes = bapi.insertB(bEntity);
+
+        return aRes + bRes;
     }
 
 }
