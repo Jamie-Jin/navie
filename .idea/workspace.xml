@@ -2,15 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2c5c7ef-2901-403d-a7dc-94b77f8a56dc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/login/login.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/ServiceLoginApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/biz/UserBiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/RoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/UserRoleEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserRoleVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/resources/cloud_login.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/biz/UserBizTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/dao/UserRoleDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/tx-manager/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/tx-manager/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud/tx-manager/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/tx-manager/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-a/service-a/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/login/service-login/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/login/service-login/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/login/service-login/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/login/service-login/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/src/main/java/com/jamie/zuul_login/ZuulLoginApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/zuul-login/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/ServiceBApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/ServiceBApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/Bbiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/Bbiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/biz/CBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/biz/CBiz.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,6 +78,10 @@
     <ignored path="$PROJECT_DIR$/server/server-a/web/target/" />
     <ignored path="$PROJECT_DIR$/common/datasource-config/target/" />
     <ignored path="$PROJECT_DIR$/server/server-a/web-a/target/" />
+    <ignored path="$PROJECT_DIR$/cloud/zuul-login/zuul/target/" />
+    <ignored path="$PROJECT_DIR$/cloud/zuul-login/login/target/" />
+    <ignored path="$PROJECT_DIR$/server/login/target/" />
+    <ignored path="$PROJECT_DIR$/server/login/service-login/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,73 +108,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/biz/UserBiz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="393">
+              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/Bbiz.java">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserRoleDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/dao/UserRoleDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserRoleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/biz/CBiz.java">
+        <entry file="file://$PROJECT_DIR$/server/login/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="267">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+            <state relative-caret-position="441">
+              <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,10 +182,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-b/api-b/src/main/java/com/jamie/api/b/api/Bapi.java">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserRoleVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="144">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -157,15 +194,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/rest/BRest.java">
+        <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="107" column="25" selection-start-line="102" selection-start-column="11" selection-end-line="107" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -176,8 +217,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Mapper" />
         <option value="Interface" />
+        <option value="Mapper" />
         <option value="Class" />
         <option value="JUnit4 Test Class" />
       </list>
@@ -185,9 +226,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>10</find>
-      <find>spring-cloud-starter-netflix-eureka-server</find>
-      <find>boot</find>
       <find>fas</find>
       <find>DEFAULT_PRIORITY</find>
       <find>fast</find>
@@ -211,10 +249,13 @@
       <find>/rabbit</find>
       <find>common</find>
       <find>validation-query-timeout</find>
-      <find>druid</find>
       <find>serverTimezone</find>
       <find>tc-</find>
       <find>manager-address</find>
+      <find>security</find>
+      <find>druid</find>
+      <find>mybatis</find>
+      <find>fastJso</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,39 +264,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/datasource-config/pom.xml" />
-        <option value="$PROJECT_DIR$/server/server-a/web/pom.xml" />
-        <option value="$PROJECT_DIR$/server/server-a/web/src/main/java/com/jamie/web/controller/AController.java" />
-        <option value="$PROJECT_DIR$/cloud/config/pom.xml" />
-        <option value="$PROJECT_DIR$/server/server-a/pom.xml" />
-        <option value="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/WebAApplication.java" />
-        <option value="$PROJECT_DIR$/server/server-a/web-a/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/server/server-a/web-a/pom.xml" />
-        <option value="$PROJECT_DIR$/common/common-config/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DBConfig.java" />
-        <option value="$PROJECT_DIR$/common/db-config/src/main/java/com/jamie/db_config/config/DruidProperties.java" />
-        <option value="$PROJECT_DIR$/server/server-b/api-b/src/main/java/com/jamie/api/b/entity/BEntity.java" />
-        <option value="$PROJECT_DIR$/server/server-b/api-b/src/main/java/com/jamie/api/b/urls/Urls.java" />
-        <option value="$PROJECT_DIR$/server/server-b/api-b/src/main/java/com/jamie/api/b/api/Bapi.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/rest/ARest.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/dao/BDao.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/rest/BRest.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/BMapper.xml" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/test/java/com/jamie/service/b/rest/BRestTest.java" />
-        <option value="$PROJECT_DIR$/cloud/tx-manager/src/main/java/com/jamie/tx_manager/TxManagerApplication.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/ServiceAApplication.java" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml" />
-        <option value="$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml" />
-        <option value="$PROJECT_DIR$/cloud/tx-manager/src/main/resources/bootstrap.properties" />
-        <option value="$PROJECT_DIR$/cloud/tx-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud/config-repo/tx-manager-dev.properties" />
-        <option value="$PROJECT_DIR$/cloud/tx-manager/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/server/redis/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/ServiceCApplication.java" />
-        <option value="$PROJECT_DIR$/server/server-c/api-c/src/main/java/com/jamie/api/c/url/Urls.java" />
         <option value="$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/rest/CRest.java" />
         <option value="$PROJECT_DIR$/common/common-config/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/server/server-c/api-c/src/main/java/com/jamie/api/c/api/CApi.java" />
@@ -269,11 +277,44 @@
         <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/urls/Urls.java" />
         <option value="$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java" />
         <option value="$PROJECT_DIR$/server/server-a/web-a/src/main/java/com/jamie/web/a/controller/AController.java" />
-        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" />
-        <option value="$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/biz/CBiz.java" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/ServiceBApplication.java" />
         <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/Bbiz.java" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java" />
         <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/cloud/tx-manager/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/biz/CBiz.java" />
+        <option value="$PROJECT_DIR$/cloud/zuul-login/zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/zuul-login/login/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/zuul-login/login/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/zuul-login/pom.xml" />
+        <option value="$PROJECT_DIR$/server/pom.xml" />
+        <option value="$PROJECT_DIR$/server/login/pom.xml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/ServiceLoginApplication.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/UserEntity.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/resources/cloud_login.sql" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/RoleEntity.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/RoleMapper.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/UserRoleEntity.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserRoleMapper.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/biz/UserBizTest.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/biz/UserBiz.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserRoleVo.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserRoleDao.java" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/dao/UserRoleDaoTest.java" />
+        <option value="$PROJECT_DIR$/cloud/config-repo/service-login-dev.yml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/pom.xml" />
       </list>
     </option>
   </component>
@@ -291,9 +332,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="949" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -301,6 +342,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,71 +359,58 @@
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
-              <item name="service-b" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="service-login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
-              <item name="service-b" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="service-login" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
-              <item name="service-b" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="naive" type="b2602c69:ProjectViewProjectNode" />
-              <item name="navie" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
-              <item name="service-b" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="service-login" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
-              <item name="service-b" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="service-login" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="b" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="naive" type="b2602c69:ProjectViewProjectNode" />
               <item name="navie" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="server-b" type="462c0819:PsiDirectoryNode" />
-              <item name="service-b" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="service-login" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="b" type="462c0819:PsiDirectoryNode" />
-              <item name="biz" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,7 +423,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/server-a/web-a" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/login/service-login" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -405,10 +434,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jamie.service.login.dao" />
+      <recent name="com.jamie.service.login.biz" />
       <recent name="com.jamie.service.c.rest" />
       <recent name="com.jamie.service.b.rest" />
       <recent name="com.jamie.redis.service" />
-      <recent name="com.jamie.service.a.rest" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -429,39 +459,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebAApplication">
-    <configuration name="ARestTest.insertA" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-a" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jamie.service.a.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jamie.service.a.rest" />
-      <option name="MAIN_CLASS_NAME" value="com.jamie.service.a.rest.ARestTest" />
-      <option name="METHOD_NAME" value="insertA" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ARestTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-a" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jamie.service.a.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jamie.service.a.rest" />
-      <option name="MAIN_CLASS_NAME" value="com.jamie.service.a.rest.ARestTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserRoleDaoTest.getUserRole">
     <configuration name="BRestTest.insertB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-b" />
       <extension name="coverage">
@@ -505,6 +503,38 @@
       <option name="PACKAGE_NAME" value="com.jamie.service.c.rest" />
       <option name="MAIN_CLASS_NAME" value="com.jamie.service.c.rest.CRestTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserBizTest.createUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-login" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jamie.service.login.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jamie.service.login.biz" />
+      <option name="MAIN_CLASS_NAME" value="com.jamie.service.login.biz.UserBizTest" />
+      <option name="METHOD_NAME" value="createUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRoleDaoTest.getUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-login" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jamie.service.login.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jamie.service.login.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.jamie.service.login.dao.UserRoleDaoTest" />
+      <option name="METHOD_NAME" value="getUserRole" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -566,6 +596,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServiceLoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-login" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.service.login.ServiceLoginApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceMessageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-message" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.service.message.ServiceMessageApplication" />
@@ -587,17 +624,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZuulLoginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="zuul-login" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamie.zuul_login.ZuulLoginApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="JUnit.ARestTest.insertA" />
-      <item itemvalue="JUnit.ARestTest.test" />
       <item itemvalue="JUnit.BRestTest.insertB" />
+      <item itemvalue="JUnit.CRestTest.insertC" />
+      <item itemvalue="JUnit.CRestTest.test" />
       <item itemvalue="Spring Boot.ApiCApplication" />
       <item itemvalue="Spring Boot.ConfigApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
@@ -607,19 +637,19 @@
       <item itemvalue="Spring Boot.ServiceCApplication" />
       <item itemvalue="Spring Boot.ServiceMessageApplication" />
       <item itemvalue="Spring Boot.TxManagerApplication" />
-      <item itemvalue="Spring Boot.ZuulLoginApplication" />
       <item itemvalue="Spring Boot.DbConfigApplication" />
       <item itemvalue="Spring Boot.WebAApplication" />
-      <item itemvalue="JUnit.CRestTest.insertC" />
-      <item itemvalue="JUnit.CRestTest.test" />
+      <item itemvalue="Spring Boot.ServiceLoginApplication" />
+      <item itemvalue="JUnit.UserBizTest.createUser" />
+      <item itemvalue="JUnit.UserRoleDaoTest.getUserRole" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRoleDaoTest.getUserRole" />
+        <item itemvalue="JUnit.UserBizTest.createUser" />
         <item itemvalue="JUnit.CRestTest.test" />
         <item itemvalue="JUnit.CRestTest.insertC" />
         <item itemvalue="JUnit.BRestTest.insertB" />
-        <item itemvalue="JUnit.ARestTest.test" />
-        <item itemvalue="JUnit.ARestTest.insertA" />
       </list>
     </recent_temporary>
   </component>
@@ -654,7 +684,8 @@
       <workItem from="1572790964291" duration="1179000" />
       <workItem from="1572825320211" duration="4178000" />
       <workItem from="1572840205213" duration="3040000" />
-      <workItem from="1572850039758" duration="5688000" />
+      <workItem from="1572850039758" duration="9393000" />
+      <workItem from="1572868736369" duration="7115000" />
     </task>
     <task id="LOCAL-00001" summary="使用配置中心">
       <created>1572525185957</created>
@@ -887,25 +918,31 @@
       <option name="project" value="LOCAL" />
       <updated>1572853282507</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="使用TX-LCN分布式事务实现跨数据源事务回滚">
+      <created>1572855844099</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1572855844099</updated>
+    </task>
+    <task id="LOCAL-00035" summary="使用TX-LCN分布式事务实现跨数据源事务回滚">
+      <created>1572857477481</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1572857477481</updated>
+    </task>
+    <task id="LOCAL-00036" summary="配置放在配置中心">
+      <created>1572875655009</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1572875655009</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BRestTest_insertB - 2019.11.04 at 08h 20m 00s.xml">
-      <configuration name="BRestTest.insertB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BRestTest_insertB - 2019.11.04 at 08h 22m 24s.xml">
-      <configuration name="BRestTest.insertB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BRestTest_insertB - 2019.11.04 at 08h 23m 45s.xml">
-      <configuration name="BRestTest.insertB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BRestTest_insertB - 2019.11.04 at 08h 25m 12s.xml">
-      <configuration name="BRestTest.insertB" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BRestTest_insertB - 2019.11.04 at 08h 26m 34s.xml">
-      <configuration name="BRestTest.insertB" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CRestTest_insertC - 2019.11.04 at 15h 20m 44s.xml">
       <configuration name="CRestTest.insertC" configurationId="JUnit" />
     </history-entry>
@@ -921,15 +958,30 @@
     <history-entry file="CRestTest_test - 2019.11.04 at 15h 35m 49s.xml">
       <configuration name="CRestTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserBizTest_createUser - 2019.11.04 at 21h 30m 11s.xml">
+      <configuration name="UserBizTest.createUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserBizTest_createUser - 2019.11.04 at 21h 31m 36s.xml">
+      <configuration name="UserBizTest.createUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserBizTest_createUser - 2019.11.04 at 21h 37m 31s.xml">
+      <configuration name="UserBizTest.createUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRoleDaoTest_getUserRole - 2019.11.04 at 21h 50m 28s.xml">
+      <configuration name="UserRoleDaoTest.getUserRole" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserRoleDaoTest_getUserRole - 2019.11.04 at 21h 51m 43s.xml">
+      <configuration name="UserRoleDaoTest.getUserRole" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76000000" />
+    <option name="totallyTimeSpent" value="86820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27405012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27405012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -939,17 +991,17 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49717057" weight="0.44227353" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43161634" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49717057" weight="0.5381883" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Docker" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50282943" side_tool="true" weight="0.61456484" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50282943" side_tool="true" weight="0.61456484" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -963,41 +1015,6 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32983023" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35165724" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4987874" weight="0.59325045" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
-      <window_info anchor="bottom" id="Docker" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012126" side_tool="true" weight="0.4724689" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32983023" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32983023" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1012,286 +1029,11 @@
     <MESSAGE value="使用LCN分布式事务插入数据" />
     <MESSAGE value="使用LCN分布式事务" />
     <MESSAGE value="使用redis存储数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用redis存储数据" />
+    <MESSAGE value="使用TX-LCN分布式事务实现跨数据源事务回滚" />
+    <MESSAGE value="配置放在配置中心" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置放在配置中心" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/mapper/BMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/dao/BDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/test/java/com/jamie/service/b/rest/BRestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/tx-manager/src/main/java/com/jamie/tx_manager/TxManagerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/tx-manager/src/main/resources/bootstrap.properties" />
-    <entry file="file://$PROJECT_DIR$/cloud/tx-manager/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/tx-manager-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-b-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-a-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/ServiceAApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/codingapi/txlcn/txlcn-tm/5.0.2.RELEASE/txlcn-tm-5.0.2.RELEASE.jar!/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.9.RELEASE/spring-boot-autoconfigure-2.1.9.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/HibernateProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding>
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.9.RELEASE/spring-boot-autoconfigure-2.1.9.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/orm/jpa/HibernateProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/tx-manager/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="145" column="38" selection-start-line="131" selection-start-column="11" selection-end-line="145" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/redis/src/main/java/com/jamie/redis/RedisApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/redis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/ServiceCApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/api-c/src/main/java/com/jamie/api/c/url/Urls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/api-c/src/main/java/com/jamie/api/c/ApiCApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/software/java/jdk/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/ch/qos/logback/core/util/TimeUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.11.RELEASE/spring-data-redis-2.1.11.RELEASE.jar!/org/springframework/data/redis/core/ValueOperations.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/redis/src/test/java/com/jamie/redis/service/RedisServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/service-c/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.11.RELEASE/spring-data-redis-2.1.11.RELEASE-sources.jar!/org/springframework/data/redis/core/ValueOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="313" column="9" selection-start-line="313" selection-start-column="9" selection-end-line="313" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.1.11.RELEASE/spring-data-redis-2.1.11.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="790" column="19" selection-start-line="790" selection-start-column="19" selection-end-line="790" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/service-c/src/test/java/com/jamie/service/c/rest/CRestTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/redis/src/main/java/com/jamie/redis/api/RedisApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/redis/src/main/java/com/jamie/redis/service/RedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/service-c/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-c/api-c/src/main/java/com/jamie/api/c/vo/CVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/util/Sets.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1395,10 +1137,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/tx-manager/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="98" column="40" selection-start-line="98" selection-start-column="40" selection-end-line="98" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/java/com/jamie/service/b/biz/Bbiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1407,8 +1187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server-c/service-c/src/main/java/com/jamie/service/c/biz/CBiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="320">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1417,28 +1197,275 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/biz/ABiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="249">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/api-a/src/main/java/com/jamie/api/a/api/Aapi.java">
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="25" column="32" lean-forward="true" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state relative-caret-position="64">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/rest/ARest.java">
+    <entry file="file://$PROJECT_DIR$/server/server-b/service-b/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+        <state relative-caret-position="80">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/zuul-login/zuul-login.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/zuul-login/zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/zuul-login/login/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/zuul-login/login/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/zuul-login/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/cloud_login.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/RoleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/entity/UserRoleEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/ServiceLoginApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/common-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/feign/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="33" column="21" selection-start-line="30" selection-start-column="7" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/RoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="48" lean-forward="true" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/biz/UserBizTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/biz/UserBiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/dao/UserRoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="107" column="25" selection-start-line="102" selection-start-column="11" selection-end-line="107" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/test/java/com/jamie/service/login/dao/UserRoleDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/java/com/jamie/service/login/vo/UserRoleVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server-a/service-a/src/main/java/com/jamie/service/a/ServiceAApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/config-repo/service-login-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/src/main/resources/mapper/UserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/login/service-login/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
         </state>
       </provider>
     </entry>

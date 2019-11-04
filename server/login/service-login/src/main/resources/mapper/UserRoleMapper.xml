@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jamie.service.login.dao.UserRoleDao">
+
+    <insert id="insert"
+            parameterType="com.jamie.service.login.entity.UserRoleEntity">
+        insert into `user_role`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            user_id, role_id,
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            #{userId}, #{roleId},
+        </trim>
+    </insert>
+
+    <!-- 获取用户以及角色信息 -->
+    <select id="getUserRole"
+            parameterType="com.jamie.service.login.vo.UserVo"
+            resultType="com.jamie.service.login.vo.UserRoleVo">
+        select
+        <trim suffixOverrides=",">
+            u.id as userId, u.name as userName,
+            r.id as roleId, r.role,
+        </trim>
+        from `user` u
+        join `user_role` ur on ur.user_id = u.id
+        join `role` r on r.id = ur.role_id
+        <trim prefix="where" prefixOverrides="and" suffix="limit 1">
+            <if test="account != null">
+                and u.account = #{account}
+            </if>
+            <if test="name != null">
+                and u.`name` = #{name}
+            </if>
+        </trim>
+    </select>
+
+</mapper>

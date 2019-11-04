@@ -89,8 +89,8 @@ public class ARest implements Aapi {
 
     // 按照网上说法，调用方的@LcnTransaction是不需要加参数的
     @LcnTransaction
-    @Override
     @PostMapping(Urls.insertABC)
+    @Override
     public int insertABC(String msg) {
         AVo aVo = new AVo();
         aVo.setMsg(msg);

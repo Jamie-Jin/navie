@@ -4,28 +4,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>naive</artifactId>
+        <artifactId>server</artifactId>
         <groupId>com.jamie</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>server</artifactId>
+    <artifactId>login</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server</name>
+    <name>login</name>
     <packaging>pom</packaging>
-    <description>服务提供模块</description>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+    <description>登录模块</description>
 
     <modules>
-        <module>message</module>
-        <module>server-a</module>
-        <module>server-b</module>
-        <module>server-c</module>
-        <module>redis</module>
-        <module>login</module>
+        <module>service-login</module>
     </modules>
 
     <build>

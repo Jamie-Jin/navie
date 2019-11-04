@@ -21,7 +21,6 @@ public class CBiz {
     private ConcurrentHashMap<String, Set<String>> ids = new ConcurrentHashMap<>();
 
     @TccTransaction(cancelMethod = "cancel", confirmMethod = "confirm")
-    //@Transactional(rollbackFor = Exception.class)
     public void insertC(CVo cVo){
         //Sets.newHashSet: com.google.common.collect，Guava依赖
         ids.putIfAbsent(TracingContext.tracing().groupId(), Sets.newHashSet(cVo.getKey()));
@@ -29,7 +28,7 @@ public class CBiz {
 
         redisApi.set(cVo.getKey(), cVo.getVal(), cVo.getExpireTime());
 
-        //throw new RuntimeException("跨数据源分布式事务测试");
+        throw new RuntimeException("跨数据源分布式事务测试");
     }
 
     // 事务确认提交

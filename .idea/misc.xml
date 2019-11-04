@@ -28,12 +28,18 @@
         <option value="$PROJECT_DIR$/server/server-c/service-c/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/config/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/tx-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud/zuul-login/pom.xml" />
         <option value="$PROJECT_DIR$/static-res/pom.xml" />
         <option value="$PROJECT_DIR$/server/redis/pom.xml" />
         <option value="$PROJECT_DIR$/common/db-config/pom.xml" />
         <option value="$PROJECT_DIR$/server/server-a/web-a/pom.xml" />
+        <option value="$PROJECT_DIR$/server/login/pom.xml" />
+        <option value="$PROJECT_DIR$/server/login/service-login/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/cloud/zuul-login/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

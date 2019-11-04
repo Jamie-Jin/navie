@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/db-config/db-config.iml" filepath="$PROJECT_DIR$/common/db-config/db-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud/eureka/eureka.iml" filepath="$PROJECT_DIR$/cloud/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud/feign/feign.iml" filepath="$PROJECT_DIR$/cloud/feign/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/login/login.iml" filepath="$PROJECT_DIR$/server/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/message/message.iml" filepath="$PROJECT_DIR$/server/message/message.iml" />
       <module fileurl="file://$PROJECT_DIR$/navie.iml" filepath="$PROJECT_DIR$/navie.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/redis/redis.iml" filepath="$PROJECT_DIR$/server/redis/redis.iml" />
@@ -25,11 +26,11 @@
       <module fileurl="file://$PROJECT_DIR$/server/server-a/service-a/service-a.iml" filepath="$PROJECT_DIR$/server/server-a/service-a/service-a.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server-b/service-b/service-b.iml" filepath="$PROJECT_DIR$/server/server-b/service-b/service-b.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server-c/service-c/service-c.iml" filepath="$PROJECT_DIR$/server/server-c/service-c/service-c.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/login/service-login/service-login.iml" filepath="$PROJECT_DIR$/server/login/service-login/service-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/message/service-message/service-message.iml" filepath="$PROJECT_DIR$/server/message/service-message/service-message.iml" />
       <module fileurl="file://$PROJECT_DIR$/static-res/static-res.iml" filepath="$PROJECT_DIR$/static-res/static-res.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" filepath="$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server-a/web-a/web-a.iml" filepath="$PROJECT_DIR$/server/server-a/web-a/web-a.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cloud/zuul-login/zuul-login.iml" filepath="$PROJECT_DIR$/cloud/zuul-login/zuul-login.iml" />
     </modules>
   </component>
 </project>

@@ -9,8 +9,8 @@
         <module name="service-c" />
         <module name="service-b" />
         <module name="service-a" />
+        <module name="service-login" />
         <module name="redis" />
-        <module name="web-a" />
         <module name="tx-manager" />
         <module name="feign" />
         <module name="common-dao" />
@@ -23,9 +23,9 @@
         <module name="eureka" />
         <module name="config" />
         <module name="db-config" />
+        <module name="web-a" />
         <module name="service-message" />
         <module name="common-web" />
-        <module name="zuul-login" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +43,7 @@
       <module name="db-config" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="feign" target="1.8" />
+      <module name="login" target="1.8" />
       <module name="message" target="1.8" />
       <module name="navie" target="1.8" />
       <module name="redis" target="1.8" />
@@ -53,11 +54,13 @@
       <module name="service-a" target="1.8" />
       <module name="service-b" target="1.8" />
       <module name="service-c" target="1.8" />
+      <module name="service-login" target="1.8" />
       <module name="service-message" target="1.8" />
       <module name="static-res" target="1.5" />
       <module name="tx-manager" target="1.8" />
       <module name="web" target="1.8" />
       <module name="web-a" target="1.8" />
+      <module name="zuul" target="1.8" />
       <module name="zuul-login" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -77,6 +80,7 @@
       <module name="db-config" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="login" options="-parameters" />
       <module name="message" options="-parameters" />
       <module name="navie" options="-parameters" />
       <module name="redis" options="-parameters" />
@@ -87,12 +91,14 @@
       <module name="service-a" options="-parameters" />
       <module name="service-b" options="-parameters" />
       <module name="service-c" options="-parameters" />
+      <module name="service-login" options="-parameters" />
       <module name="service-message" options="-parameters" />
       <module name="static-res" options="" />
       <module name="tx-manager" options="-parameters" />
       <module name="web" options="-parameters" />
       <module name="web-a" options="-parameters" />
-      <module name="zuul-login" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+      <module name="zuul-login" options="" />
     </option>
   </component>
 </project>

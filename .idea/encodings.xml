@@ -8,13 +8,17 @@
     <file url="file://$PROJECT_DIR$/cloud/feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud/tx-manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud/zuul-login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud/zuul-login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud/zuul-login/login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud/zuul-login/zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/common-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/common-dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/common-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/common/datasource-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/db-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/server/login/service-login" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/message" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/message/api-message" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/message/service-message" charset="UTF-8" />
@@ -22,7 +26,6 @@
     <file url="file://$PROJECT_DIR$/server/server-a" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/server-a/api-a" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/server-a/service-a" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/server/server-a/web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/server-a/web-a" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/server-b" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/server/server-b/api-b" charset="UTF-8" />
