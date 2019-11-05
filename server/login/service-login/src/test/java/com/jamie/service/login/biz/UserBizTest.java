@@ -30,7 +30,15 @@ public class UserBizTest {
 
     @Test
     public void createRoleMenu(){
-        int result = userBiz.createRoleMenu("role_visitor", "/a/**");
+        int result = userBiz.createRoleMenu("ROLE_VISITOR", "/b/**");
         logger.info("插入结果：" + result);
+    }
+
+    @Test
+    public void createRole(){
+        UserVo userVo = new UserVo();
+        userVo.setRole("ROLE_VISITOR");
+        userVo.setRoleCn("访客");
+        logger.info("插入结果：" + userBiz.createRole(userVo));
     }
 }

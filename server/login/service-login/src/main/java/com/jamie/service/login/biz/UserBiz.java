@@ -27,6 +27,18 @@ public class UserBiz {
     private MenuDao menuDao;
 
     /**
+     * 插入角色
+     * @param userVo
+     * @return
+     */
+    public int createRole(UserVo userVo){
+        RoleEntity roleEntity = new RoleEntity();
+        roleEntity.setRole(userVo.getRole());
+        roleEntity.setRoleCn(userVo.getRoleCn());//角色中文名
+        return roleDao.insertRole(roleEntity);
+    }
+
+    /**
      * 用户与角色的关联关系
      * @param userVo
      * @return
@@ -69,19 +81,26 @@ public class UserBiz {
         roleVo.setRole(role);
         RoleEntity roleEntity = roleDao.getRole(roleVo);
 
+        // 根据菜单路径获取菜单数据
         MenuEntity menuEntity = new MenuEntity();
         menuEntity.setPath(menu);
-        int menuRes = menuDao.insertMenu(menuEntity);
-        Integer menuId = menuEntity.getId();    //菜单id(MyBatis主键回写)
+        MenuEntity result = menuDao.getMenu(menuEntity);
 
-        int result = 0;
-        if (menuRes != 0){
-            RoleMenuEntity roleMenuEntity = new RoleMenuEntity();
-            roleMenuEntity.setMenuId(menuId);
-            roleMenuEntity.setRoleId(roleEntity.getId());
-            result = roleMenuDao.insertRoleMenu(roleMenuEntity);
+        // 菜单不存在，新增
+        if (null == result){
+            menuDao.insertMenu(menuEntity);
+            Integer menuId = menuEntity.getId();    //菜单id(MyBatis主键回写)
+            menuEntity.setId(menuId);
         }
-        return result;
+        // 菜单已存在，不用新增
+        else {
+            menuEntity.setId(result.getId());
+        }
+
+        RoleMenuEntity roleMenuEntity = new RoleMenuEntity();
+        roleMenuEntity.setMenuId(menuEntity.getId());
+        roleMenuEntity.setRoleId(roleEntity.getId());
+        return roleMenuDao.insertRoleMenu(roleMenuEntity);
     }
 
 }

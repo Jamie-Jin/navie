@@ -8,10 +8,10 @@
             parameterType="com.jamie.service.login.entity.RoleEntity">
         insert into `role`
         <trim prefix="(" suffix=")" suffixOverrides=",">
-            role,
+            role, role_cn,
         </trim>
         <trim prefix="values(" suffix=")" suffixOverrides=",">
-            #{role},
+            #{role}, #{roleCn},
         </trim>
     </insert>
 

@@ -5,6 +5,7 @@ import com.jamie.service.login.entity.MenuEntity;
 import com.jamie.service.login.vo.RoleMenuVo;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
 
 @Repository
@@ -12,6 +13,12 @@ public class MenuDao extends BaseDao<MenuEntity> {
 
     public int insertMenu(MenuEntity entity){
         return singleInsert(entity);
+    }
+
+    public MenuEntity getMenu(MenuEntity menuEntity){
+        HashMap<String, Object> param = new HashMap<>();
+        param.put("path", menuEntity.getPath());
+        return getSqlSessionTemplate().selectOne(getStatement("getMenu"), param);
     }
 
     public List<RoleMenuVo> getRoleMenus(){

@@ -20,5 +20,6 @@ public class UserVo implements Serializable {
     private Date updateTime;
 
     private String role;
+    private String roleCn;
 
 }

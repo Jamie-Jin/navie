@@ -20,9 +20,9 @@
         <id property="id" column="id"/>
         <result property="menu" column="menu"/>
         <collection property="roleVos" ofType="com.jamie.service.login.vo.RoleVo">
-            <id column="id" property="roleId"/>
+            <id column="roleId" property="id"/>
             <result column="role" property="role"/>
-            <result column="role_cn" property="roleCn"/>
+            <result column="roleCn" property="roleCn"/>
         </collection>
     </resultMap>
     
@@ -32,13 +32,29 @@
             m.id as menuId,
             m.path as menu,
             r.id as roleId,
-            r.role,
-            r.role_cn,
+            r.role as role,
+            r.role_cn as roleCn,
         </trim>
         from `menu` m
         left join `menu_role` mr on m.id = mr.menu_id
         left join `role` r on r.id = mr.role_id
     </select>
     <!-- 获取所有角色对应的菜单路径 end -->
+
+    <!-- 获取菜单路径 -->
+    <select id="getMenu"
+            parameterType="com.jamie.service.login.entity.MenuEntity"
+            resultType="com.jamie.service.login.entity.MenuEntity">
+        select
+        <trim suffixOverrides=",">
+            id, path,
+        </trim>
+        from `menu`
+        <trim prefix="where" prefixOverrides="and">
+            <if test="path != null">
+                and path = #{path}
+            </if>
+        </trim>
+    </select>
 
 </mapper>
