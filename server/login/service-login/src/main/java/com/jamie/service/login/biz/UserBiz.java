@@ -1,11 +1,8 @@
 package com.jamie.service.login.biz;
 
-import com.jamie.service.login.dao.RoleDao;
-import com.jamie.service.login.dao.UserDao;
-import com.jamie.service.login.dao.UserRoleDao;
-import com.jamie.service.login.entity.RoleEntity;
-import com.jamie.service.login.entity.UserEntity;
-import com.jamie.service.login.entity.UserRoleEntity;
+import com.jamie.service.login.dao.*;
+import com.jamie.service.login.entity.*;
+import com.jamie.service.login.vo.RoleVo;
 import com.jamie.service.login.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,8 +20,14 @@ public class UserBiz {
     @Autowired
     private UserRoleDao userRoleDao;
 
+    @Autowired
+    private RoleMenuDao roleMenuDao;
+
+    @Autowired
+    private MenuDao menuDao;
+
     /**
-     * 创建用户
+     * 用户与角色的关联关系
      * @param userVo
      * @return
      */
@@ -52,6 +55,32 @@ public class UserBiz {
             result = userRoleDao.insertUserRole(userRoleEntity);
         }
 
+        return result;
+    }
+
+    /**
+     * 菜单与角色的关联关系
+     * @param role
+     * @param menu
+     * @return
+     */
+    public int createRoleMenu(String role, String menu){
+        RoleVo roleVo = new RoleVo();
+        roleVo.setRole(role);
+        RoleEntity roleEntity = roleDao.getRole(roleVo);
+
+        MenuEntity menuEntity = new MenuEntity();
+        menuEntity.setPath(menu);
+        int menuRes = menuDao.insertMenu(menuEntity);
+        Integer menuId = menuEntity.getId();    //菜单id(MyBatis主键回写)
+
+        int result = 0;
+        if (menuRes != 0){
+            RoleMenuEntity roleMenuEntity = new RoleMenuEntity();
+            roleMenuEntity.setMenuId(menuId);
+            roleMenuEntity.setRoleId(roleEntity.getId());
+            result = roleMenuDao.insertRoleMenu(roleMenuEntity);
+        }
         return result;
     }
 

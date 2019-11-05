@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jamie.service.login.dao.RoleMenuDao">
+
+    <insert id="insert"
+            parameterType="com.jamie.service.login.entity.RoleMenuEntity">
+        insert into `menu_role`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            role_id, menu_id,
+        </trim>
+        <trim prefix="values(" suffix=")" suffixOverrides=",">
+            #{roleId}, #{menuId},
+        </trim>
+    </insert>
+
+</mapper>

@@ -15,4 +15,23 @@
         </trim>
     </insert>
 
+    <!-- 根据条件获取角色信息 -->
+    <select id="getRole"
+            parameterType="com.jamie.service.login.vo.RoleVo"
+            resultType="com.jamie.service.login.entity.RoleEntity">
+        select
+        <trim suffixOverrides=",">
+            id, role, role_cn,
+        </trim>
+        from `role`
+        <trim prefix="where" prefixOverrides="and">
+            <if test="role != null">
+                and role = #{role}
+            </if>
+            <if test="roleCn != null">
+                and role_cn = #{roleCn}
+            </if>
+        </trim>
+    </select>
+
 </mapper>

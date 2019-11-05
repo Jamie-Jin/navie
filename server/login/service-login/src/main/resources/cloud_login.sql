@@ -1,4 +1,4 @@
-// 用户表
+-- 用户表
 CREATE TABLE `user`(
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`account` VARCHAR(50) NOT NULL DEFAULT '' COMMENT '账号',
@@ -11,17 +11,18 @@ CREATE TABLE `user`(
 )
 ENGINE=INNODB;
 
-// 角色表
+-- 角色表
 CREATE TABLE `role`(
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`role` VARCHAR(50) NOT NULL DEFAULT '' COMMENT '角色',
+	`role_cn` VARCHAR(50) NOT NULL DEFAULT '' COMMENT '角色名（中文）',
 	`create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	`update_time` TIMESTAMP NULL,
 	PRIMARY KEY(`id`)
 )
 ENGINE=INNODB;
 
-// 用户角色表(中间表)
+-- 用户角色表(中间表)
 CREATE TABLE `user_role`(
 	`id` INT NOT NULL AUTO_INCREMENT,
 	`role_id` INT NOT NULL DEFAULT 0 COMMENT '角色id',
@@ -29,5 +30,26 @@ CREATE TABLE `user_role`(
 	`create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	`update_time` timestamp null,
 	PRIMARY KEY(`id`)
+)
+ENGINE=INNODB;
+
+-- 菜单表，存放访问路径
+CREATE TABLE `menu`(
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`path` VARCHAR(100) NOT NULL DEFAULT '' COMMENT '访问路径',
+	`create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`update_time` TIMESTAMP NULL,
+	PRIMARY KEY(`id`)
+)
+ENGINE=INNODB;
+
+-- 菜单角色表
+CREATE TABLE `menu_role`(
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`role_id` INT NOT NULL DEFAULT 0 COMMENT '角色id',
+	`menu_id` INT NOT NULL DEFAULT 0 COMMENT '菜单id',
+	`create_time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	`update_time` TIMESTAMP,
+	PRIMARY KEY (`id`)
 )
 ENGINE=INNODB;

@@ -6,14 +6,18 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 角色与菜单关联实体类
+ */
 @Getter
 @Setter
-public class RoleEntity implements Serializable {
-    private static final long serialVersionUID = 4718909262381474889L;
+public class RoleMenuEntity implements Serializable {
+    private static final long serialVersionUID = -8907075742656400133L;
 
     private Integer id;
-    private String role;
-    private String roleCn;
+    private Integer roleId;
+    private Integer menuId;
+
     private Date createTime;
     private Date updateTime;
 }
