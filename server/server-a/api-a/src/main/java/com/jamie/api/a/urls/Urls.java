@@ -4,11 +4,14 @@ public class Urls {
 
     public static final String insertA = "service/a/insertA";
 
-    public static final String messageAToB = "service/a/messageAToB";
-
-    public static final String getData = "service/a/getData";
-
-    public static final String insertAandB = "service/a/insertAandB";
+    public static final String insertAB = "service/a/insertAB";
 
     public static final String insertABC = "service/a/insertABC";
+
+    public static final String insertAFirstThenB = "service/a/insertAFirstThenB";
+
+    public static final String sendMsgToB = "service/a/sendMsgToB";
+
+    public static final String getLatestData = "service/a/getLatestData";
+
 }

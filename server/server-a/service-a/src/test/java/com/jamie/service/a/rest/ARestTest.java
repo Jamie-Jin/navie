@@ -29,4 +29,9 @@ public class ARestTest {
         aVo.setMsg("A发送消息给B");
         aapi.messageAToB(aVo);
     }
+
+    @Test
+    public void test2(){
+        aapi.insertAFirstThenB("分布式事务测试20191109");
+    }
 }

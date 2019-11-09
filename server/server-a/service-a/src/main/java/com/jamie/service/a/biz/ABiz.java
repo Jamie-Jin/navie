@@ -36,8 +36,14 @@ public class ABiz {
         return aProducerLogDao.insertAProducerLog(entity);
     }
 
-    public String getData(){
-        return JSON.toJSONString(aDao.getData());
+    // 获取最新的数据
+    public String getLatestData(){
+        return JSON.toJSONString(aDao.getLatestData());
+    }
+
+    // 根据查询条件获取数据模块A数据
+    public AEntity getDataBy(AVo aVo){
+        return aDao.getDataBy(aVo);
     }
 
 }

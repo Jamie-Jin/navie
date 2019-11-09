@@ -3,6 +3,7 @@ package com.jamie.service.a.rest;
 import com.alibaba.fastjson.JSON;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.jamie.api.a.api.Aapi;
+import com.jamie.api.a.entity.AEntity;
 import com.jamie.api.a.entity.AProducerLogEntity;
 import com.jamie.api.a.urls.Urls;
 import com.jamie.api.a.vo.AVo;
@@ -13,6 +14,8 @@ import com.jamie.api.c.vo.CVo;
 import com.jamie.api.message.api.MessageApi;
 import com.jamie.api.message.vo.NotifyVo;
 import com.jamie.service.a.biz.ABiz;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,6 +25,7 @@ import java.util.UUID;
 
 @RestController
 public class ARest implements Aapi {
+    private static final Logger logger = LoggerFactory.getLogger(ARest.class);
 
     @Autowired
     private ABiz aBiz;
@@ -41,8 +45,9 @@ public class ARest implements Aapi {
         return aBiz.insertA(aVo);
     }
 
+    // 向模块B发送消息
     @Override
-    @PostMapping(Urls.messageAToB)
+    @PostMapping(Urls.sendMsgToB)
     public void messageAToB(AVo aVo) {
         try {
             NotifyVo notifyVo = new NotifyVo();
@@ -65,17 +70,18 @@ public class ARest implements Aapi {
         }
     }
 
+    // 获取最新的数据
+    @PostMapping(Urls.getLatestData)
     @Override
-    public String getData() {
-        return aBiz.getData();
+    public String getLatestData() {
+        return aBiz.getLatestData();
     }
-
 
     // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
     @LcnTransaction
-    @PostMapping(Urls.insertAandB)
+    @PostMapping(Urls.insertAB)
     @Override
-    public int insertAandB(String msg) {
+    public int insertAB(String msg) {
         AVo aVo = new AVo();
         aVo.setMsg(msg);
         int aRes = aBiz.insertA(aVo);
@@ -107,6 +113,33 @@ public class ARest implements Aapi {
         cApi.insertC(cVo);
 
         return aRes + bRes;
+    }
+
+    // 在同一个事务中，先在A插入一条数据，然后查询这条数据，然后B得到这条数据后也将插入数据库中
+    @LcnTransaction
+    @PostMapping(Urls.insertAFirstThenB)
+    @Override
+    public int insertAFirstThenB(@RequestBody String msg) {
+        // 在A中插入一条数据
+        AVo aVo = new AVo();
+        aVo.setMsg(msg);
+        int aResult = aBiz.insertA(aVo);
+
+        logger.info("数据模块A插入的数据：" + JSON.toJSONString(aVo));
+
+        // 立马取出刚插入的数据，以此数据插入B
+        AEntity aEntity = aBiz.getDataBy(aVo);
+
+        logger.info("从数据模块A获取到的数据：" + JSON.toJSONString(aEntity));
+
+        int bResult = 0;
+        if (aEntity != null){
+            BEntity bEntity = new BEntity();
+            bEntity.setMsg(aEntity.getMsg());
+            bResult = bapi.insertB(bEntity);
+        }
+
+        return aResult + bResult;
     }
 
 }

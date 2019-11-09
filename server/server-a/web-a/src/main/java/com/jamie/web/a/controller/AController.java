@@ -16,15 +16,15 @@ public class AController {
 
     @RequestMapping("/data")
     @ResponseBody
-    public String dataA(){
-        return aapi.getData();
+    public String getLatestData(){
+        return aapi.getLatestData();
     }
 
     // 在模块A和模块B分别插入数据，测试TX-LCN分布式事务是否生效
     @RequestMapping("/ab")
     @ResponseBody
     public int insertAB(@RequestParam("m") String msg){
-        return aapi.insertAandB(msg);
+        return aapi.insertAB(msg);
     }
 
     @RequestMapping("/abc")

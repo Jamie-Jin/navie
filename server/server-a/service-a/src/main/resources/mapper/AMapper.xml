@@ -14,8 +14,29 @@
         </trim>
     </insert>
 
-    <select id="getData" resultType="com.jamie.api.a.entity.AEntity">
-        select msg from `table_a` order by create_time desc limit 1
+    <!-- 获取最新的数据 -->
+    <select id="getLatestData" resultType="com.jamie.api.a.entity.AEntity">
+        select
+        <trim suffixOverrides=",">
+            id, msg, create_time,
+        </trim>
+        from `table_a`
+        order by create_time desc limit 1
+    </select>
+
+    <!-- 根据条件查询 -->
+    <select id="getDataABy" parameterType="java.util.HashMap"
+            resultType="com.jamie.api.a.entity.AEntity">
+        select
+        <trim suffixOverrides=",">
+            id, msg, create_time, update_time,
+        </trim>
+        from `table_a`
+        <trim prefix="where" prefixOverrides="and">
+            <if test="msg != null">
+                and msg = #{msg}
+            </if>
+        </trim>
     </select>
 
 </mapper>
