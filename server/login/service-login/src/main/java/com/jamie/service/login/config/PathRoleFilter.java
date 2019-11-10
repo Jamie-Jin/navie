@@ -1,5 +1,6 @@
 package com.jamie.service.login.config;
 
+import com.jamie.service.login.biz.MenuBiz;
 import com.jamie.service.login.dao.MenuDao;
 import com.jamie.service.login.vo.RoleMenuVo;
 import com.jamie.service.login.vo.RoleVo;
@@ -24,7 +25,7 @@ public class PathRoleFilter implements FilterInvocationSecurityMetadataSource {
     private static AntPathMatcher antPathMatcher = new AntPathMatcher();
 
     @Autowired
-    private MenuDao menuDao;
+    private MenuBiz menuBiz;
 
     @Override
     public Collection<ConfigAttribute> getAttributes(Object o) throws IllegalArgumentException {
@@ -32,7 +33,7 @@ public class PathRoleFilter implements FilterInvocationSecurityMetadataSource {
         String requestUrl = ((FilterInvocation) o).getRequestUrl();
 
         // 获取所有的请求路径，以及路径对应的角色信息
-        List<RoleMenuVo> roleMenuVos = menuDao.getRoleMenus();
+        List<RoleMenuVo> roleMenuVos = menuBiz.getRoleMenus();
 
         // 当前请求路径与所有的路径进行正则匹配，匹配上了，获取该路径对应的角色, 将角色信息写入Spring Security中
         for (RoleMenuVo roleMenuVo: roleMenuVos){

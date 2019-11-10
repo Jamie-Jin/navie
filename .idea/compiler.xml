@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config" />
         <module name="service-c" />
         <module name="service-b" />
         <module name="service-a" />
         <module name="redis" />
+        <module name="web-a" />
         <module name="tx-manager" />
-        <module name="web-b" />
+        <module name="common-util" />
+        <module name="common-web" />
         <module name="feign" />
         <module name="common-dao" />
         <module name="api-message" />
@@ -22,11 +23,11 @@
         <module name="api-b" />
         <module name="api-a" />
         <module name="eureka" />
-        <module name="service-login" />
+        <module name="config" />
         <module name="db-config" />
-        <module name="web-a" />
+        <module name="web-b" />
         <module name="service-message" />
-        <module name="common-web" />
+        <module name="service-login" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +39,7 @@
       <module name="common" target="1.8" />
       <module name="common-config" target="1.8" />
       <module name="common-dao" target="1.8" />
+      <module name="common-util" target="1.8" />
       <module name="common-web" target="1.8" />
       <module name="config" target="1.8" />
       <module name="datasource-config" target="1.8" />
@@ -76,6 +78,7 @@
       <module name="common" options="-parameters" />
       <module name="common-config" options="-parameters" />
       <module name="common-dao" options="-parameters" />
+      <module name="common-util" options="-parameters" />
       <module name="common-web" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="datasource-config" options="-parameters" />

@@ -11,10 +11,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 
 /**
  * Spring Security配置类
  */
+//  使用Redis管理登录的session，在此处设置登录超时时间，注意注意：最小超时时间是60s，小于60s无效!!!
+@EnableRedisHttpSession(maxInactiveIntervalInSeconds = 60)
+// 启用Spring Security
 @EnableWebSecurity
 public class LoginSecurityConfig extends WebSecurityConfigurerAdapter {
 

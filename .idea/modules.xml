@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common-config/common-config.iml" filepath="$PROJECT_DIR$/common/common-config/common-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common-dao/common-dao.iml" filepath="$PROJECT_DIR$/common/common-dao/common-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common-util/common-util.iml" filepath="$PROJECT_DIR$/common/common-util/common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common-web/common-web.iml" filepath="$PROJECT_DIR$/common/common-web/common-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud/config/config.iml" filepath="$PROJECT_DIR$/cloud/config/config.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/db-config/db-config.iml" filepath="$PROJECT_DIR$/common/db-config/db-config.iml" />

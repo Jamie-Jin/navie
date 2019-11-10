@@ -55,10 +55,10 @@
         </dependency>
 
         <!-- 此处为大坑，要使用Spring Security+Redis管理Session时，要引入以下依赖，不要引入spring-session -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.session</groupId>-->
-<!--            <artifactId>spring-session-data-redis</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+        </dependency>
 
         <!-- MySQL驱动 -->
         <dependency>
@@ -105,6 +105,22 @@
             <artifactId>db-config</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- Redis模块(redis连接池配置在这个项目中) -->
+        <!-- 要为登陆用户设置session超时时间，这个功能就用redis实现吧 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>redis</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 公共工具模块 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>common-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>
