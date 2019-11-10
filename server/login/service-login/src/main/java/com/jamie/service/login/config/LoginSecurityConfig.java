@@ -8,7 +8,6 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
@@ -27,9 +26,17 @@ public class LoginSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private PathRoleFilter pathRoleFilter;
 
-    // 将当前登录用户的角色和访问路径需要的角色比较
+    // 自定义决策器，将当前登录用户的角色和访问路径需要的角色比较
     @Autowired
     private LoginAccessDecisionManager loginAccessDecisionManager;
+
+    // 自定义登录成功处理器（用于在用户登录成功后，拿回跳转登录页之前的请求路径）
+    @Autowired
+    private LoginSuccessHandler loginSuccessHandler;
+
+    // 自定义登录失败处理器（并不是登录失败就跳转登录页喔，还是要重定向到用户请求的路径，但别担心，登录失败时，是无法跳转到用户请求路径，只会去到登录页）
+    @Autowired
+    private LoginFailHandler loginFailHandler;
 
     // 密码加密解密工具
     @Bean
@@ -49,16 +56,20 @@ public class LoginSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity
                 .authorizeRequests().antMatchers().permitAll()
                 .anyRequest().authenticated()
-                .and()
-                .formLogin()
                 .withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
                     @Override
                     public <O extends FilterSecurityInterceptor> O postProcess(O o){
+                        // 自定义决策器
                         o.setAccessDecisionManager(loginAccessDecisionManager);
+                        // todo
                         o.setSecurityMetadataSource(pathRoleFilter);
                         return o;
                     }
                 })
+                .and()
+                .formLogin()        // todo 以下是猜测：Spring Security的配置有顺序之分，formLogin如果放在拦截器，决策器前面，它们将不生效
+                .successHandler(loginSuccessHandler)
+                .failureHandler(loginFailHandler)
                 .and()
                 .csrf().disable();
     }

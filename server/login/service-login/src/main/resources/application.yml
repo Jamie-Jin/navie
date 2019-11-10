@@ -27,3 +27,4 @@ mybatis:
 zuul:
   routes:
     web-a: /a/**
+    web-b: /b/**

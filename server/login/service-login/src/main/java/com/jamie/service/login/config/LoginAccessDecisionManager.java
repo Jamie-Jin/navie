@@ -1,5 +1,7 @@
 package com.jamie.service.login.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.ConfigAttribute;
@@ -10,37 +12,43 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
+import java.util.Iterator;
 
 /**
+ * 自定义决策器
  * 将当前登录用户的角色和访问路径需要的角色比较，如果两者有交集，请求继续，如果两者无交集，就是非法请求
  */
 @Component
 public class LoginAccessDecisionManager implements AccessDecisionManager {
-    @Override
-    public void decide(Authentication authentication, Object o, Collection<ConfigAttribute> collection) throws AccessDeniedException, InsufficientAuthenticationException {
-        // collection: 当前访问路径需要的角色
-        for (ConfigAttribute attribute: collection){
-            // 说明该路径要登陆后才能访问
-            if ("ROLE_LOGIN".equals(attribute.getAttribute())){
-                if (authentication instanceof AnonymousAuthenticationToken){
-                    throw new AccessDeniedException("未登录，非法请求");
-                }
-                else {
-                    // 请求继续
-                    return;
-                }
-            }
+    private static final Logger logger = LoggerFactory.getLogger(LoginAccessDecisionManager.class);
 
-            // 当前用户已有的角色
+    @Override
+    public void decide(Authentication authentication, Object requestUrl, Collection<ConfigAttribute> collection)
+            throws AccessDeniedException, InsufficientAuthenticationException {
+        if (collection == null){
+            return;
+        }
+
+        logger.info("当前访问路径：" + requestUrl.toString());
+
+        // 当前请求路径需要的角色（一个请求可能对应多个角色）
+        for (ConfigAttribute configAttribute: collection){
+            // 角色
+            String needRole = configAttribute.getAttribute();
+
+            logger.info(requestUrl.toString() + "需要的权限：" + needRole);
+
+            // 当前登录用户拥有的权限
             Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
             for (GrantedAuthority authority: authorities){
-                // 当前用户已有角色与访问路径需要的角色一致
-                if (authority.getAuthority().equals(attribute.getAttribute())){
-                    // 请求继续
+                // 请求路径需要的角色 == 当前用户拥有的角色
+                if (needRole.equals(authority.getAuthority())){
+                    // 验证通过
                     return;
                 }
             }
         }
+        throw new AccessDeniedException("没有权限访问路径");
     }
 
     // TODO 之前是return false 为什么要return true

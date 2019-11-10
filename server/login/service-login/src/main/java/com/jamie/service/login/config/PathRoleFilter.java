@@ -31,7 +31,7 @@ public class PathRoleFilter implements FilterInvocationSecurityMetadataSource {
         // 当前请求路径
         String requestUrl = ((FilterInvocation) o).getRequestUrl();
 
-        // 获取所有的路径，以及路径对应的角色信息
+        // 获取所有的请求路径，以及路径对应的角色信息
         List<RoleMenuVo> roleMenuVos = menuDao.getRoleMenus();
 
         // 当前请求路径与所有的路径进行正则匹配，匹配上了，获取该路径对应的角色, 将角色信息写入Spring Security中
@@ -40,16 +40,19 @@ public class PathRoleFilter implements FilterInvocationSecurityMetadataSource {
                 // 角色信息
                 List<RoleVo> roles = roleMenuVo.getRoleVos();
 
+                // Spring Security要的是字符串数组，而非集合，顶....
                 String[] roleStrs = new String[roles.size()];
                 for (int i=0; i<roleStrs.length; i++){
+                    // 只要权限，不要id，权限中文名
                     roleStrs[i] = roles.get(i).getRole();
                 }
+
+                // 将当前请求路径所需的角色写入Spring Security中
                 return SecurityConfig.createList(roleStrs);
             }
         }
 
-        // TODO 没匹配上的路径, 跳转登录页？？
-        return SecurityConfig.createList("ROLE_LOGIN");
+        return null;
     }
 
     @Override
