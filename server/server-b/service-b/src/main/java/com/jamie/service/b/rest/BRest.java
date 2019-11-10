@@ -1,5 +1,6 @@
 package com.jamie.service.b.rest;
 
+import com.alibaba.fastjson.JSON;
 import com.jamie.api.b.api.Bapi;
 import com.jamie.api.b.entity.BEntity;
 import com.jamie.api.b.urls.Urls;
@@ -19,5 +20,13 @@ public class BRest implements Bapi {
     @PostMapping(Urls.insertB)
     public int insertB(@RequestBody BEntity bEntity) {
         return bbiz.insertB(bEntity);
+    }
+
+    @Override
+    @PostMapping(Urls.getLatestData)
+    public String getLatestData() {
+        BEntity bEntity = bbiz.getLatestData();
+
+        return JSON.toJSONString(bEntity);
     }
 }

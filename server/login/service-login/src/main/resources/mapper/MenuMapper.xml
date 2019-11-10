@@ -25,7 +25,8 @@
             <result column="roleCn" property="roleCn"/>
         </collection>
     </resultMap>
-    
+
+    <!-- 获取所有的路径，以及路径对应的角色 -->
     <select id="getRoleMenus" resultMap="RoleMenuResultMap">
         select
         <trim suffixOverrides=",">

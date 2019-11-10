@@ -1,5 +1,6 @@
 package com.jamie.service.b.biz;
 
+import com.alibaba.fastjson.JSON;
 import com.codingapi.txlcn.tc.annotation.DTXPropagation;
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import com.jamie.api.b.entity.BEntity;
@@ -20,6 +21,11 @@ public class Bbiz {
         //throw new RuntimeException("测试分布式事务回滚");
 
         return bDao.insertB(bEntity);
+    }
+
+    // 获取最新的数据
+    public BEntity getLatestData(){
+        return bDao.getLatestData();
     }
 
 }

@@ -31,6 +31,7 @@
       <module fileurl="file://$PROJECT_DIR$/static-res/static-res.iml" filepath="$PROJECT_DIR$/static-res/static-res.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" filepath="$PROJECT_DIR$/cloud/tx-manager/tx-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server-a/web-a/web-a.iml" filepath="$PROJECT_DIR$/server/server-a/web-a/web-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server-b/web-b/web-b.iml" filepath="$PROJECT_DIR$/server/server-b/web-b/web-b.iml" />
     </modules>
   </component>
 </project>

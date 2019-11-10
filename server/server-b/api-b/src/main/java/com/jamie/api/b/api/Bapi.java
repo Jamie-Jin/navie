@@ -12,4 +12,7 @@ public interface Bapi {
     @PostMapping(Urls.insertB)
     int insertB(@RequestBody BEntity bEntity);
 
+    // 获取最新的数据
+    @PostMapping(Urls.getLatestData)
+    String getLatestData();
 }

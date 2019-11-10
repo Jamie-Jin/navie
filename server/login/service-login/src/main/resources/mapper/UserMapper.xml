@@ -16,4 +16,26 @@
         </trim>
     </insert>
 
+    <!-- 根据条件查询用户信息 -->
+    <select id="getUserBy" parameterType="java.util.HashMap"
+            resultType="com.jamie.service.login.entity.UserEntity">
+        select
+        <trim suffixOverrides=",">
+            id, `name`, account, password, enable,
+        </trim>
+        from `user`
+        <trim prefix="where" prefixOverrides="and">
+            <if test="account != null">
+                and account = #{account}
+            </if>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="name != null">
+                and `name` = #{name}
+            </if>
+        </trim>
+        limit 1
+    </select>
+
 </mapper>

@@ -34,4 +34,27 @@
         </trim>
     </select>
 
+    <!-- 获取用户对应的角色 -->
+    <select id="getRolesByUser" parameterType="java.util.HashMap"
+            resultType="com.jamie.service.login.entity.RoleEntity">
+        select
+        <trim suffixOverrides=",">
+            r.id, r.role,
+        </trim>
+        from `role` r
+        join `user_role` ur on r.id = ur.role_id
+        join `user` u on u.id = ur.user_id
+        <trim prefix="where" prefixOverrides="and">
+            <if test="account != null">
+                and u.account = #{account}
+            </if>
+            <if test="name != null">
+                and u.name = #{name}
+            </if>
+            <if test="id != null">
+                and u.id = #{id}
+            </if>
+        </trim>
+    </select>
+
 </mapper>

@@ -14,4 +14,13 @@
         </trim>
     </insert>
 
+    <!-- 获取最新的数据 -->
+    <select id="getLatestData" resultType="com.jamie.api.b.entity.BEntity">
+        select
+        <trim suffixOverrides=",">
+            id, msg, create_time,
+        </trim>
+        from `table_b` order by create_time desc limit 1
+    </select>
+
 </mapper>

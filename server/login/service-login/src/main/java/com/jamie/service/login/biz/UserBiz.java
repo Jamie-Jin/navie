@@ -52,10 +52,18 @@ public class UserBiz {
         userDao.insertUser(userEntity);
         int userId = userEntity.getId(); //MyBatis主键回写
 
-        // 角色
-        RoleEntity roleEntity = new RoleEntity();
-        roleEntity.setRole(userVo.getRole());
-        roleDao.insertRole(roleEntity);
+        // 先检查角色是否存在
+        RoleVo roleVo = new RoleVo();
+        roleVo.setRole(userVo.getRole());
+        RoleEntity roleEntity = roleDao.getRole(roleVo);
+
+        // 若角色为空，插入一条数据
+        if (roleEntity == null){
+            // 角色
+            roleEntity = new RoleEntity();
+            roleEntity.setRole(userVo.getRole());
+            roleDao.insertRole(roleEntity);
+        }
         int roleId = roleEntity.getId(); //MyBatis主键回写
 
         // 用户角色关联

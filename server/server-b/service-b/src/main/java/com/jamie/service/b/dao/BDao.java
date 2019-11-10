@@ -11,4 +11,7 @@ public class BDao extends BaseDao<BEntity> {
         return singleInsert(bEntity);
     }
 
+    public BEntity getLatestData(){
+        return getSqlSessionTemplate().selectOne(getStatement("getLatestData"));
+    }
 }

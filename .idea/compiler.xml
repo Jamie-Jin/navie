@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config" />
         <module name="service-c" />
         <module name="service-b" />
         <module name="service-a" />
-        <module name="service-login" />
         <module name="redis" />
         <module name="tx-manager" />
+        <module name="web-b" />
         <module name="feign" />
         <module name="common-dao" />
         <module name="api-message" />
@@ -21,7 +22,7 @@
         <module name="api-b" />
         <module name="api-a" />
         <module name="eureka" />
-        <module name="config" />
+        <module name="service-login" />
         <module name="db-config" />
         <module name="web-a" />
         <module name="service-message" />
@@ -60,6 +61,7 @@
       <module name="tx-manager" target="1.8" />
       <module name="web" target="1.8" />
       <module name="web-a" target="1.8" />
+      <module name="web-b" target="1.8" />
       <module name="zuul" target="1.8" />
       <module name="zuul-login" target="1.8" />
     </bytecodeTargetLevel>
@@ -97,6 +99,7 @@
       <module name="tx-manager" options="-parameters" />
       <module name="web" options="-parameters" />
       <module name="web-a" options="-parameters" />
+      <module name="web-b" options="-parameters" />
       <module name="zuul" options="-parameters" />
       <module name="zuul-login" options="" />
     </option>

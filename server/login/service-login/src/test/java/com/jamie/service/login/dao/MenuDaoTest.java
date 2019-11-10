@@ -1,6 +1,7 @@
 package com.jamie.service.login.dao;
 
 import com.alibaba.fastjson.JSON;
+import com.jamie.service.login.entity.MenuEntity;
 import com.jamie.service.login.vo.RoleMenuVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,5 +27,12 @@ public class MenuDaoTest {
     public void getRoleMenus() {
         List<RoleMenuVo> vos = menuDao.getRoleMenus();
         logger.info("查询结果：{}", JSON.toJSONString(vos));
+    }
+
+    @Test
+    public void insertMenu(){
+        MenuEntity menuEntity = new MenuEntity();
+        menuEntity.setPath("/b/**");
+        menuDao.insertMenu(menuEntity);
     }
 }

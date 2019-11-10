@@ -21,6 +21,7 @@ public class MenuDao extends BaseDao<MenuEntity> {
         return getSqlSessionTemplate().selectOne(getStatement("getMenu"), param);
     }
 
+    // 获取所有的路径，以及路径对应的角色信息
     public List<RoleMenuVo> getRoleMenus(){
         return getSqlSessionTemplate().selectList(getStatement("getRoleMenus"));
     }
