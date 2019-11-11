@@ -13,6 +13,9 @@ public interface Aapi {
     @PostMapping(Urls.insertA)
     int insertA(@RequestBody AVo aVo);
 
+    @PostMapping(Urls.getDataBy)
+    AEntity getDataBy(@RequestBody AVo aVo);
+
     // 往模块B发送消息
     @PostMapping(Urls.sendMsgToB)
     void messageAToB(@RequestBody AVo aVo);
@@ -34,5 +37,7 @@ public interface Aapi {
     int insertAFirstThenB(@RequestBody String msg);
 
 
+    @PostMapping(Urls.updateA)
+    int updateA(@RequestBody AVo aVo);
 
 }

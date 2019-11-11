@@ -14,4 +14,8 @@ public class Urls {
 
     public static final String getLatestData = "service/a/getLatestData";
 
+    public static final String getDataBy = "service/a/getDataBy";
+
+    public static final String updateA = "service/a/updateA";
+
 }

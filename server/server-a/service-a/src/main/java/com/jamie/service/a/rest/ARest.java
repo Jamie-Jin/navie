@@ -45,6 +45,12 @@ public class ARest implements Aapi {
         return aBiz.insertA(aVo);
     }
 
+    @Override
+    @PostMapping(Urls.getDataBy)
+    public AEntity getDataBy(@RequestBody AVo aVo) {
+        return aBiz.getDataBy(aVo);
+    }
+
     // 向模块B发送消息
     @Override
     @PostMapping(Urls.sendMsgToB)
@@ -140,6 +146,13 @@ public class ARest implements Aapi {
         }
 
         return aResult + bResult;
+    }
+
+    // 根据条件更新
+    @PostMapping(Urls.updateA)
+    @Override
+    public int updateA(@RequestBody AVo aVo) {
+        return aBiz.updateA(aVo);
     }
 
 }

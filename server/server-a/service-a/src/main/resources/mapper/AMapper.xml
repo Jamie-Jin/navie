@@ -33,10 +33,29 @@
         </trim>
         from `table_a`
         <trim prefix="where" prefixOverrides="and">
+            <if test="id != null">
+                and id = #{id}
+            </if>
             <if test="msg != null">
                 and msg = #{msg}
             </if>
         </trim>
     </select>
+
+    <update id="update" parameterType="com.jamie.api.a.entity.AEntity">
+        update `table_a`
+        <trim prefix="set" suffixOverrides=",">
+            msg = #{msg},
+            update_time = #{updateTime},
+        </trim>
+        <trim prefix="where" prefixOverrides="and">
+            <if test="id != null">
+                and id = #{id}
+            </if>
+<!--            <if test="msg != null">-->
+<!--                and msg = #{msg}-->
+<!--            </if>-->
+        </trim>
+    </update>
 
 </mapper>

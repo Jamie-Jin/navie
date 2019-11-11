@@ -30,6 +30,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
+        <!-- FastJson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
         <!-- 内含api-a模块，feign依赖，web依赖 -->
         <dependency>
             <groupId>com.jamie</groupId>

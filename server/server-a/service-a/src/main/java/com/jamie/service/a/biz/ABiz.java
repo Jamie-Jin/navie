@@ -14,6 +14,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 @Service
 public class ABiz {
 
@@ -44,6 +46,15 @@ public class ABiz {
     // 根据查询条件获取数据模块A数据
     public AEntity getDataBy(AVo aVo){
         return aDao.getDataBy(aVo);
+    }
+
+    // 根据条件更新
+    public int updateA(AVo aVo){
+        AEntity aEntity = new AEntity();
+        BeanUtils.copyProperties(aVo, aEntity);
+        aEntity.setUpdateTime(new Date());
+
+        return aDao.updateA(aEntity);
     }
 
 }
