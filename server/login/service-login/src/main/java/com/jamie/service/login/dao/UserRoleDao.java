@@ -1,9 +1,9 @@
 package com.jamie.service.login.dao;
 
+import com.jamie.api.login.vo.UserRoleVo;
+import com.jamie.api.login.vo.UserVo;
 import com.jamie.common_dao.BaseDao;
-import com.jamie.service.login.entity.UserRoleEntity;
-import com.jamie.service.login.vo.UserRoleVo;
-import com.jamie.service.login.vo.UserVo;
+import com.jamie.api.login.entity.UserRoleEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

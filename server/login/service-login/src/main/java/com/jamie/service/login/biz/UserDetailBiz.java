@@ -2,9 +2,9 @@ package com.jamie.service.login.biz;
 
 import com.jamie.service.login.dao.RoleDao;
 import com.jamie.service.login.dao.UserDao;
-import com.jamie.service.login.entity.RoleEntity;
-import com.jamie.service.login.entity.UserEntity;
-import com.jamie.service.login.vo.UserVo;
+import com.jamie.api.login.entity.RoleEntity;
+import com.jamie.api.login.entity.UserEntity;
+import com.jamie.api.login.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

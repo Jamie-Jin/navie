@@ -36,6 +36,7 @@
         <option value="$PROJECT_DIR$/server/login/service-login/pom.xml" />
         <option value="$PROJECT_DIR$/server/server-b/web-b/pom.xml" />
         <option value="$PROJECT_DIR$/common/common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/server/login/api-login/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -1,9 +1,9 @@
 package com.jamie.service.login.biz;
 
+import com.jamie.api.login.entity.*;
+import com.jamie.api.login.vo.RoleVo;
+import com.jamie.api.login.vo.UserVo;
 import com.jamie.service.login.dao.*;
-import com.jamie.service.login.entity.*;
-import com.jamie.service.login.vo.RoleVo;
-import com.jamie.service.login.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +24,7 @@ public class UserBiz {
     private RoleMenuDao roleMenuDao;
 
     @Autowired
-    private MenuDao menuDao;
+    private MenuBiz menuBiz;
 
     /**
      * 插入角色
@@ -92,11 +92,11 @@ public class UserBiz {
         // 根据菜单路径获取菜单数据
         MenuEntity menuEntity = new MenuEntity();
         menuEntity.setPath(menu);
-        MenuEntity result = menuDao.getMenu(menuEntity);
+        MenuEntity result = menuBiz.getMenu(menuEntity);
 
         // 菜单不存在，新增
         if (null == result){
-            menuDao.insertMenu(menuEntity);
+            menuBiz.insertMenu(menuEntity);
             Integer menuId = menuEntity.getId();    //菜单id(MyBatis主键回写)
             menuEntity.setId(menuId);
         }

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/server/server-a/api-a/api-a.iml" filepath="$PROJECT_DIR$/server/server-a/api-a/api-a.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server-b/api-b/api-b.iml" filepath="$PROJECT_DIR$/server/server-b/api-b/api-b.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server-c/api-c/api-c.iml" filepath="$PROJECT_DIR$/server/server-c/api-c/api-c.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/login/api-login/api-login.iml" filepath="$PROJECT_DIR$/server/login/api-login/api-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/message/api-message/api-message.iml" filepath="$PROJECT_DIR$/server/message/api-message/api-message.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud/cloud.iml" filepath="$PROJECT_DIR$/cloud/cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />

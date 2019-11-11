@@ -1,8 +1,10 @@
 package com.jamie.service.login.dao;
 
+import com.jamie.api.login.entity.UserEntity;
+import com.jamie.api.login.vo.UserVo;
 import com.jamie.common_dao.BaseDao;
-import com.jamie.service.login.entity.UserEntity;
-import com.jamie.service.login.vo.UserVo;
+import com.jamie.common_util.redis.RedisConstant;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
@@ -15,6 +17,7 @@ public class UserDao extends BaseDao<UserEntity> {
     }
 
     // 根据条件查询用户信息
+    @Cacheable(value = RedisConstant.user, key = "#userVo.getAccount()")
     public UserEntity getUserBy(UserVo userVo){
         HashMap<String, Object> param = new HashMap<>();
         param.put("account", userVo.getAccount());

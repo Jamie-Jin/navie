@@ -121,6 +121,13 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
+        <!-- 内含登录模块的实体类 -->
+        <dependency>
+            <groupId>com.jamie</groupId>
+            <artifactId>api-login</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -1,8 +1,8 @@
 package com.jamie.service.login.dao;
 
 import com.alibaba.fastjson.JSON;
-import com.jamie.service.login.vo.UserRoleVo;
-import com.jamie.service.login.vo.UserVo;
+import com.jamie.api.login.vo.UserRoleVo;
+import com.jamie.api.login.vo.UserVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

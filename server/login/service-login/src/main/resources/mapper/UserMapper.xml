@@ -6,7 +6,7 @@
 
     <!-- keyProperty：主键回写，插入数据后将id回写到传参中 -->
     <insert id="insert" keyProperty="id"
-            parameterType="com.jamie.service.login.entity.UserEntity">
+            parameterType="com.jamie.api.login.entity.UserEntity">
         insert into `user`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             account, `name`, password, enable,
@@ -18,7 +18,7 @@
 
     <!-- 根据条件查询用户信息 -->
     <select id="getUserBy" parameterType="java.util.HashMap"
-            resultType="com.jamie.service.login.entity.UserEntity">
+            resultType="com.jamie.api.login.entity.UserEntity">
         select
         <trim suffixOverrides=",">
             id, `name`, account, password, enable,

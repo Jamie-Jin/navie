@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.jamie.service.login.dao.RoleDao">
+<mapper namespace="com.jamie.api.login.dao.RoleDao">
 
     <insert id="insert" keyProperty="id"
             parameterType="com.jamie.service.login.entity.RoleEntity">
@@ -17,8 +17,8 @@
 
     <!-- 根据条件获取角色信息 -->
     <select id="getRole"
-            parameterType="com.jamie.service.login.vo.RoleVo"
-            resultType="com.jamie.service.login.entity.RoleEntity">
+            parameterType="com.jamie.api.login.vo.RoleVo"
+            resultType="com.jamie.api.login.entity.RoleEntity">
         select
         <trim suffixOverrides=",">
             id, role, role_cn,
@@ -36,7 +36,7 @@
 
     <!-- 获取用户对应的角色 -->
     <select id="getRolesByUser" parameterType="java.util.HashMap"
-            resultType="com.jamie.service.login.entity.RoleEntity">
+            resultType="com.jamie.api.login.entity.RoleEntity">
         select
         <trim suffixOverrides=",">
             r.id, r.role,

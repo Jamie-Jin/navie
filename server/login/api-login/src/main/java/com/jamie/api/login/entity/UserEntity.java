@@ -1,4 +1,4 @@
-package com.jamie.service.login.entity;
+package com.jamie.api.login.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,10 +6,13 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 用户实体类
+ */
 @Getter
 @Setter
 public class UserEntity implements Serializable {
-    private static final long serialVersionUID = -1488405024013135279L;
+    private static final long serialVersionUID = -7892014740179695707L;
 
     private Integer id;
     private String account;

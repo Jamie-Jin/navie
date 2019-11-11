@@ -1,4 +1,4 @@
-package com.jamie.service.login.vo;
+package com.jamie.api.login.vo;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +9,7 @@ import java.util.Date;
 @Getter
 @Setter
 public class UserVo implements Serializable {
-    private static final long serialVersionUID = -6533974015113477700L;
+    private static final long serialVersionUID = -1064779653605011110L;
 
     private Integer id;
     private String account;
@@ -19,7 +19,6 @@ public class UserVo implements Serializable {
     private Date createTime;
     private Date updateTime;
 
-    private String role;
-    private String roleCn;
-
+    private String role;    //角色英文名
+    private String roleCn;  //角色中文名
 }

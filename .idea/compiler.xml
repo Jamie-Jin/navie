@@ -9,11 +9,11 @@
         <module name="service-c" />
         <module name="service-b" />
         <module name="service-a" />
+        <module name="service-login" />
         <module name="redis" />
-        <module name="web-a" />
-        <module name="tx-manager" />
         <module name="common-util" />
-        <module name="common-web" />
+        <module name="tx-manager" />
+        <module name="api-a" />
         <module name="feign" />
         <module name="common-dao" />
         <module name="api-message" />
@@ -21,19 +21,21 @@
         <module name="common-config" />
         <module name="api-c" />
         <module name="api-b" />
-        <module name="api-a" />
+        <module name="web-a" />
         <module name="eureka" />
         <module name="config" />
+        <module name="api-login" />
         <module name="db-config" />
         <module name="web-b" />
         <module name="service-message" />
-        <module name="service-login" />
+        <module name="common-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-a" target="1.8" />
       <module name="api-b" target="1.8" />
       <module name="api-c" target="1.8" />
+      <module name="api-login" target="1.8" />
       <module name="api-message" target="1.8" />
       <module name="cloud" target="1.8" />
       <module name="common" target="1.8" />
@@ -73,6 +75,7 @@
       <module name="api-a" options="-parameters" />
       <module name="api-b" options="-parameters" />
       <module name="api-c" options="-parameters" />
+      <module name="api-login" options="-parameters" />
       <module name="api-message" options="-parameters" />
       <module name="cloud" options="-parameters" />
       <module name="common" options="-parameters" />

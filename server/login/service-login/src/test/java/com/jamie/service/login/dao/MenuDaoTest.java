@@ -1,8 +1,8 @@
 package com.jamie.service.login.dao;
 
 import com.alibaba.fastjson.JSON;
-import com.jamie.service.login.entity.MenuEntity;
-import com.jamie.service.login.vo.RoleMenuVo;
+import com.jamie.api.login.entity.MenuEntity;
+import com.jamie.api.login.vo.RoleMenuVo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

@@ -5,7 +5,7 @@
 <mapper namespace="com.jamie.service.login.dao.MenuDao">
 
     <insert id="insert" keyProperty="id"
-            parameterType="com.jamie.service.login.entity.MenuEntity">
+            parameterType="com.jamie.api.login.entity.MenuEntity">
         insert into `menu`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             path,
@@ -16,10 +16,10 @@
     </insert>
 
     <!-- 获取所有角色对应的菜单路径 start -->
-    <resultMap id="RoleMenuResultMap" type="com.jamie.service.login.vo.RoleMenuVo">
+    <resultMap id="RoleMenuResultMap" type="com.jamie.api.login.vo.RoleMenuVo">
         <id property="id" column="id"/>
         <result property="menu" column="menu"/>
-        <collection property="roleVos" ofType="com.jamie.service.login.vo.RoleVo">
+        <collection property="roleVos" ofType="com.jamie.api.login.vo.RoleVo">
             <id column="roleId" property="id"/>
             <result column="role" property="role"/>
             <result column="roleCn" property="roleCn"/>
@@ -44,8 +44,8 @@
 
     <!-- 获取菜单路径 -->
     <select id="getMenu"
-            parameterType="com.jamie.service.login.entity.MenuEntity"
-            resultType="com.jamie.service.login.entity.MenuEntity">
+            parameterType="com.jamie.api.login.entity.MenuEntity"
+            resultType="com.jamie.api.login.entity.MenuEntity">
         select
         <trim suffixOverrides=",">
             id, path,

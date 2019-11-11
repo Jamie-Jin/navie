@@ -1,9 +1,8 @@
 package com.jamie.service.login.config;
 
 import com.jamie.service.login.biz.MenuBiz;
-import com.jamie.service.login.dao.MenuDao;
-import com.jamie.service.login.vo.RoleMenuVo;
-import com.jamie.service.login.vo.RoleVo;
+import com.jamie.api.login.vo.RoleMenuVo;
+import com.jamie.api.login.vo.RoleVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;

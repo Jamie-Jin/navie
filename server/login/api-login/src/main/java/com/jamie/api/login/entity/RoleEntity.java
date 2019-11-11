@@ -1,4 +1,4 @@
-package com.jamie.service.login.entity;
+package com.jamie.api.login.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -6,10 +6,13 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 用户角色实体类
+ */
 @Getter
 @Setter
 public class RoleEntity implements Serializable {
-    private static final long serialVersionUID = 4718909262381474889L;
+    private static final long serialVersionUID = -8616117407179493379L;
 
     private Integer id;
     private String role;

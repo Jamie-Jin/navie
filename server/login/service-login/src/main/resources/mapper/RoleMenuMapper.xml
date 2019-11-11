@@ -2,10 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.jamie.service.login.dao.RoleMenuDao">
+<mapper namespace="com.jamie.api.login.dao.RoleMenuDao">
 
     <insert id="insert"
-            parameterType="com.jamie.service.login.entity.RoleMenuEntity">
+            parameterType="com.jamie.api.login.entity.RoleMenuEntity">
         insert into `menu_role`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             role_id, menu_id,

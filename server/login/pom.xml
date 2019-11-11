@@ -16,6 +16,7 @@
     <description>登录模块</description>
 
     <modules>
+        <module>api-login</module>
         <module>service-login</module>
     </modules>
 

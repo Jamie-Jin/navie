@@ -1,7 +1,7 @@
 package com.jamie.service.login.dao;
 
+import com.jamie.api.login.entity.RoleMenuEntity;
 import com.jamie.common_dao.BaseDao;
-import com.jamie.service.login.entity.RoleMenuEntity;
 import org.springframework.stereotype.Repository;
 
 @Repository
