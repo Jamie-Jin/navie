@@ -3,6 +3,7 @@ service:
   b: http://localhost:1003
   c: http://localhost:1004
   message: http://localhost:1002
+  resource: http://localhost:1006
 
 eureka:
   client:

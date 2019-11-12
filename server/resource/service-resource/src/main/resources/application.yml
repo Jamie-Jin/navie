@@ -1,0 +1,32 @@
+server:
+  port: 1006
+
+spring:
+  application:
+    name: service-resource
+  profiles:
+    active: dev
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      validation-query: select 1 from DUAL
+      test-on-return: false
+      test-on-borrow: true
+      test-while-idle: true
+      pool-prepared-statements: false
+  rabbitmq:
+    listener:
+      simple:
+        acknowledge-mode: manual
+        max-concurrency: 10
+        concurrency: 5
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    use-generated-keys: true
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
