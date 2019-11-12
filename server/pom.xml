@@ -26,6 +26,7 @@
         <module>server-c</module>
         <module>redis</module>
         <module>login</module>
+        <module>resource</module>
     </modules>
 
     <build>

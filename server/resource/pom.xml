@@ -3,20 +3,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jamie</groupId>
-    <artifactId>static-res</artifactId>
+    <parent>
+        <artifactId>server</artifactId>
+        <groupId>com.jamie</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>resource</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>static-res</name>
-    <packaging>war</packaging>  <!-- 静态因为需要直接访问，所以要打成war包 -->
-    <description>静态资源模块</description>
+    <name>resource</name>
+    <packaging>pom</packaging>
+    <description>资源模块</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
-    <dependencies>
-
-    </dependencies>
+   <modules>
+       <module>api-resource</module>
+       <module>service-resource</module>
+   </modules>
 
     <build>
         <plugins>
