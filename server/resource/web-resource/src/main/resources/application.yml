@@ -1,0 +1,19 @@
+server:
+  port: 2003
+
+spring:
+  application:
+    name: web-resource
+
+  freemarker:
+    template-loader-path: classpath:/templates/
+    check-template-location: true
+    cache: true
+    content-type: text/html;charset=UTF-8
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: req
+    suffix: .ftl
+
+static:
+  url: http://localhost:8080/static

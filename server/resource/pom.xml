@@ -22,6 +22,7 @@
    <modules>
        <module>api-resource</module>
        <module>service-resource</module>
+       <module>web-resource</module>
    </modules>
 
     <build>
